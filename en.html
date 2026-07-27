@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fajer Parsa Travel Agency | Travel, Study & Pilgrimage</title>
   <meta name="description" content="Fajer Parsa Travel Agency in Kabul. Over 5 years of experience in flights, business visas, study visas, and Hajj/Umrah services.">
+  
+  <!-- SEO & Social Media Open Graph Tags -->
+  <meta property="og:title" content="Fajer Parsa Travel Agency">
+  <meta property="og:description" content="Professional flight tickets, study & business visas, and Hajj & Ziyarat pilgrimage registration in Kabul.">
+  <meta property="og:image" content="https://khwajaprn.github.io/fajer-parsa/logo.png">
+  <meta property="og:url" content="https://khwajaprn.github.io/fajer-parsa/en.html">
+  <meta property="og:type" content="website">
+
   <link rel="icon" type="image/png" href="logo.png">
 
   <!-- Inter Font -->
@@ -23,12 +31,10 @@
     a { text-decoration: none; color: inherit; }
     .container { width: min(1200px, calc(100% - 40px)); margin: auto; }
     
-    /* Scroll Animations */
     .reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
     .reveal.active { opacity: 1; transform: translateY(0); }
     .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
 
-    /* Topbar & Header */
     .top { background: var(--dark-blue); color: #d7e8f1; font-size: 0.85rem; }
     .top .container { display: flex; justify-content: space-between; padding: 8px 0; align-items: center; }
     .top a { color: #fff; font-weight: 700; }
@@ -43,10 +49,9 @@
     .btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
     .gold { background: var(--gold); color: #102d3d; }
     .gold:hover { background: var(--gold-hover); }
-    .outline { border: 2px solid rgba(255,255,255,0.5); color: #fff; background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); }
+    .outline { border: 2px solid rgba(255,255,255,0.6); color: #fff; background: rgba(255,255,255,0.1); backdrop-filter: blur(4px); }
     .outline:hover { background: #fff; color: var(--navy); border-color: #fff; }
 
-    /* Hero Section */
     .hero { 
       background: linear-gradient(180deg, rgba(8, 46, 70, 0.8) 0%, rgba(5, 28, 43, 0.95) 100%), 
                   url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
@@ -58,45 +63,40 @@
     .hero p { max-width: 700px; color: #e1edf3; font-size: 1.2rem; font-weight: 300; margin-bottom: 35px; }
     .actions { display: flex; gap: 15px; flex-wrap: wrap; }
 
-    /* Trust Stats */
     .trust-bar { background: var(--dark-blue); border-bottom: 1px solid #103b58; color: #fff; padding: 30px 0; }
     .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
     .stat-item h3 { margin: 0; font-size: 2rem; color: var(--gold); font-weight: 900; }
     .stat-item p { margin: 4px 0 0; font-size: 0.95rem; color: #a4c2d1; }
 
-    /* Layout */
     section { padding: 100px 0; }
     .intro { max-width: 750px; margin-bottom: 50px; }
     .kicker { font-weight: 800; font-size: 0.85rem; color: var(--blue); text-transform: uppercase; letter-spacing: 1px; }
     h2 { font-size: clamp(2rem, 3.5vw, 2.6rem); line-height: 1.2; color: #0b3148; margin: 8px 0; font-weight: 900; letter-spacing: -0.5px; }
 
-    /* About */
     .about-box { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; background: #fff; border-radius: 30px; padding: 50px; box-shadow: 0 15px 40px rgba(0,0,0,0.04); border: 1px solid #eef3f5; }
     .about-badge { background: #eaf4f8; padding: 8px 18px; border-radius: 30px; color: var(--blue); font-weight: 700; font-size: 0.85rem; margin-bottom: 15px; display: inline-block; text-transform: uppercase; letter-spacing: 1px; }
     .license-card { background: #fdfaf3; border: 1px solid #f3e5c8; border-radius: 16px; padding: 22px; margin-top: 25px; border-left: 5px solid var(--gold); }
 
-    /* Services Grid */
     .services { background: var(--cream); }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
     .card { 
-      border-radius: 20px; padding: 40px 30px 30px; position: relative; overflow: hidden; 
+      border-radius: 20px; padding: 35px 25px 25px; position: relative; overflow: hidden; 
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
       box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
-      height: 340px; display: flex; flex-direction: column; justify-content: flex-end;
+      min-height: 360px; display: flex; flex-direction: column; justify-content: flex-end;
     }
     .card::before {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(5,28,43,0.1) 0%, rgba(5,28,43,0.95) 100%);
+      background: linear-gradient(180deg, rgba(5,28,43,0.15) 0%, rgba(5,28,43,0.96) 100%);
       z-index: 1; transition: opacity 0.3s;
     }
     .card:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 20px 40px rgba(8, 46, 70, 0.2); }
     .card:hover::before { background: linear-gradient(180deg, rgba(17,105,156,0.3) 0%, rgba(5,28,43,0.98) 100%); }
     .card > * { position: relative; z-index: 2; color: #fff; }
-    .card .icon { font-size: 2.5rem; margin-bottom: auto; display: inline-block; background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); width: 60px; height: 60px; border-radius: 14px; text-align: center; line-height: 60px; border: 1px solid rgba(255,255,255,0.3); }
-    .card h3 { margin: 0 0 8px; font-size: 1.4rem; font-weight: 800; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
-    .card p { font-size: 0.95rem; margin: 0; line-height: 1.6; color: #d7e8f1; }
+    .card .icon { font-size: 2.2rem; margin-bottom: auto; display: inline-block; background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); width: 55px; height: 55px; border-radius: 14px; text-align: center; line-height: 55px; border: 1px solid rgba(255,255,255,0.3); }
+    .card h3 { margin: 0 0 8px; font-size: 1.35rem; font-weight: 800; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+    .card p { font-size: 0.9rem; margin: 0 0 12px; line-height: 1.5; color: #d7e8f1; }
 
-    /* Destinations Grid */
     .destinations-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
     .dest-card { position: relative; border-radius: 20px; overflow: hidden; height: 350px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); cursor: pointer; }
     .dest-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
@@ -105,9 +105,8 @@
     .dest-overlay h3 { margin: 0; font-size: 1.3rem; font-weight: 900; }
     .dest-overlay span { font-size: 0.9rem; color: #f1c570; font-weight: 500; }
 
-    /* Contact & Form */
-    .contact { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 40px; }
-    .panel { border-radius: 24px; padding: 40px; background: #eaf4f8; border: 1px solid #d4e5ee; }
+    .contact { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 40px; }
+    .panel { border-radius: 24px; padding: 35px; background: #eaf4f8; border: 1px solid #d4e5ee; }
     .form { background: #fff; border: 1px solid #d6e4eb; border-radius: 24px; padding: 40px; box-shadow: 0 15px 40px rgba(0,0,0,0.04); }
     .row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .field { display: grid; gap: 8px; margin-bottom: 20px; }
@@ -117,7 +116,6 @@
     
     footer { background: #041622; color: #b5cbd7; padding: 50px 0 30px; font-size: 0.95rem; }
 
-    /* WhatsApp Button */
     .whatsapp-float { position: fixed; bottom: 35px; right: 35px; background: var(--whatsapp); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: grid; place-items: center; font-size: 2.2rem; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); z-index: 999; transition: transform 0.3s; animation: pulse 2s infinite; }
     
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
@@ -189,7 +187,6 @@
       <div class="container">
         <div class="intro reveal"><div class="kicker">Our Specialized Services</div><h2>The Right Choice for Your Next Step</h2></div>
         <div class="grid">
-          <!-- Background Images for Services -->
           <article class="card reveal delay-1" style="background: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80') center/cover;">
             <div class="icon">✈</div><h3>Travel & Visa Services</h3><p>Full consultation for obtaining visas and preparing travel documents.</p>
           </article>
@@ -202,29 +199,25 @@
           <article class="card reveal delay-1" style="background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80') center/cover;">
             <div class="icon">🎓</div><h3>Study Visas</h3><p>Step-by-step guidance for university admissions and scholarships.</p>
           </article>
+          
           <article class="card reveal delay-2" style="background: url('https://images.unsplash.com/photo-1580418827493-f2b22c0a2805?w=600&q=80') center/cover;">
-            <div class="icon">🕋</div><h3>Hajj & Umrah</h3><p>Complete arrangements, visa processing, and holy journey registrations.</p>
+            <div class="icon">🕋</div>
+            <h3>Hajj & Umrah</h3>
+            <p>Complete arrangements, visa processing, and holy journey registrations.</p>
+            <a href="https://forms.gle/TRzRvwWLHztKeK3j6" target="_blank" class="btn outline" style="padding: 6px 12px; font-size: 0.85rem;">Online Hajj Register</a>
           </article>
-          <article class="card reveal delay-3" style="background: url('https://images.unsplash.com/photo-1542404060-84a86b1f28b7?w=600&q=80') center/cover;">
-            <div class="icon">🕌</div><h3>Ziyarat Caravans</h3><p>Organized dispatch of pilgrimage groups to holy shrines.</p>
-          </article> <article class="card reveal delay-2" style="background: url('https://images.unsplash.com/photo-1580418827493-f2b22c0a2805?w=600&q=80') center/cover;">
-  <div class="icon">🕋</div>
-  <h3>حج و عمره</h3>
-  <p>ترتیبات کامل، اخذ ویزا و ثبت‌نام در پروسه‌های متبرکه.</p>
-  <a href="https://forms.gle/TRzRvwWLHztKeK3j6" target="_blank" class="btn outline" style="margin-top: 15px; padding: 8px 15px; font-size: 0.9rem;">ثبت‌نام آنلاین حج</a>
-</article>
 
-<article class="card reveal delay-3" style="background: url('https://images.unsplash.com/photo-1542404060-84a86b1f28b7?w=600&q=80') center/cover;">
-  <div class="icon">🕌</div>
-  <h3>کاروان‌های زیارتی</h3>
-  <p>اعزام منظم گروه‌های زیارتی به عتبات عالیات.</p>
-  <a href="https://forms.gle/TRzRvwWLHztKeK3j6" target="_blank" class="btn outline" style="margin-top: 15px; padding: 8px 15px; font-size: 0.9rem;">ثبت‌نام آنلاین کربلا</a>
-</article>
+          <article class="card reveal delay-3" style="background: url('https://images.unsplash.com/photo-1542404060-84a86b1f28b7?w=600&q=80') center/cover;">
+            <div class="icon">🕌</div>
+            <h3>Ziyarat Caravans</h3>
+            <p>Organized dispatch of pilgrimage groups to holy shrines.</p>
+            <a href="https://forms.gle/TRzRvwWLHztKeK3j6" target="_blank" class="btn outline" style="padding: 6px 12px; font-size: 0.85rem;">Online Karbala Register</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Popular Destinations: 8 Countries -->
+    <!-- Top Destinations -->
     <section id="destinations">
       <div class="container">
         <div class="intro reveal"><div class="kicker">Popular Routes</div><h2>Top Destinations</h2></div>
@@ -252,7 +245,19 @@
             <p><strong>WhatsApp:</strong><br><a href="https://wa.me/93777377774">+93 777 377 774</a><br><a href="https://wa.me/93785867036">+93 785 867 036</a></p>
             <p><strong>Email:</strong><br><a href="mailto:khoojafahim@gmail.com">khoojafahim@gmail.com</a></p>
             <p><strong>Address:</strong> Office 85, 2nd Floor, Peywand Commercial Market, Dasht-e-Barchi, Kabul.</p>
+            
+            <div style="margin-top: 20px; border-radius: 12px; overflow: hidden; border: 1px solid #c5dbe7;">
+              <iframe 
+                src="https://maps.google.com/maps?q=Dasht-e-Barchi,%20Kabul&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="190" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+              </iframe>
+            </div>
           </aside>
+          
           <form class="form" id="form">
             <div class="row">
               <div class="field"><label>Full Name</label><input name="name" required></div>
@@ -279,13 +284,11 @@
   <a href="https://wa.me/93777377774" class="whatsapp-float" target="_blank" rel="noopener">💬</a>
 
   <script>
-    // Scroll Animations Observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('active'); });
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // WhatsApp Form Submit
     document.getElementById('form').addEventListener('submit', function(e) {
       e.preventDefault(); const f = new FormData(e.currentTarget);
       const m = `Hello, new request:\nName: ${f.get('name')}\nContact: ${f.get('phone')}\nService: ${f.get('service')}\nMessage: ${f.get('message')}`;
