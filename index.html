@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شرکت خدمات سیاحتی فجر پارسا | خدمات سفر، تحصیلی و زیارتی</title> <link rel="icon" type="image/png" href="logo.png">
+  <meta name="description" content="شرکت خدمات سیاحتی فجر پارسا با ۵ سال سابقه و جواز رسمی ۳ ساله: ارائه خدمات تکت‌پیما، دعوت‌نامه تجارتی، ویزای تحصیلی، حج، عمره و زیارت در کابل.">
+  
+  <!-- Open Graph / پیش‌نمایش شبکه‌های اجتماعی -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="شرکت خدمات سیاحتی فجر پارسا">
+  <meta property="og:description" content="همراه معتمد شما برای خدمات سفر، ویزای تحصیلی، دعوت‌نامه تجارتی و تورهای زیارتی.">
+  <meta property="og:image" content="logo.png">
+
+  <!-- فونت اصلی دری -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #082e46;
+      --blue: #11699c;
+      --gold: #e5ad45;
+      --cream: #f7f4ee;
+      --muted: #58707f;
+      --whatsapp: #25D366;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: #123040; font-family: 'Vazirmatn', Tahoma, sans-serif; line-height: 1.7; background: #fff; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: min(1120px, calc(100% - 38px)); margin: auto; }
+    
+    /* Topbar & Header */
+    .top { background: #08273a; color: #d7e8f1; font-size: 0.85rem; }
+    .top .container { display: flex; justify-content: space-between; padding: 8px 0; align-items: center; }
+    .top a { color: #fff; font-weight: 700; }
+    header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px); z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    nav { height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; color: #0b3148; font-size: 1.2rem; }
+    .brand img { width: 100px; height: 55px; object-fit: contain; }
+    .links { display: flex; gap: 22px; font-size: 0.95rem; color: #49606d; font-weight: 500; }
+    .links a:hover { color: var(--blue); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 11px 20px; border-radius: 9px; font-weight: 700; border: 0; cursor: pointer; transition: 0.2s ease; }
+    .gold { background: var(--gold); color: #102d3d; }
+    .gold:hover { background: #d49c34; }
+    .outline { border: 1px solid rgba(255,255,255,0.4); color: #fff; }
+    .outline:hover { background: rgba(255,255,255,0.1); }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(135deg, #082e46 0%, #061f30 100%); color: #fff; padding: 90px 0; position: relative; overflow: hidden; }
+    .hero:after { content: "✦"; position: absolute; left: 5%; bottom: -60px; font-size: 16rem; color: rgba(229, 173, 69, 0.08); pointer-events: none; }
+    .hero h1 { font-size: clamp(2.1rem, 4.5vw, 3.4rem); line-height: 1.25; max-width: 780px; margin: 12px 0; font-weight: 800; }
+    .eyebrow { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.05em; color: #f1c570; background: rgba(241, 197, 112, 0.1); padding: 4px 12px; border-radius: 20px; display: inline-block; }
+    .hero p { max-width: 650px; color: #d6e6ed; font-size: 1.1rem; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+
+    /* Trust Stats Bar */
+    .trust-bar { background: #051c2b; border-bottom: 1px solid #103b58; color: #fff; padding: 20px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
+    .stat-item h3 { margin: 0; font-size: 1.6rem; color: var(--gold); font-weight: 800; }
+    .stat-item p { margin: 2px 0 0; font-size: 0.85rem; color: #a4c2d1; }
+
+    /* General Section */
+    section { padding: 80px 0; }
+    .intro { max-width: 700px; margin-bottom: 35px; }
+    .kicker { font-weight: 800; font-size: 0.85rem; color: var(--blue); }
+    h2 { font-size: clamp(1.8rem, 3vw, 2.3rem); line-height: 1.3; color: #0b3148; margin: 8px 0; font-weight: 800; }
+    p { color: var(--muted); }
+
+    /* About Section */
+    .about-box { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: #fff; border: 1px solid #e2ecef; border-radius: 20px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
+    .about-badge { background: #eaf4f8; padding: 8px 16px; border-radius: 8px; color: var(--blue); font-weight: 700; font-size: 0.9rem; display: inline-block; margin-bottom: 15px; }
+    .license-card { background: #fdfaf3; border: 1px solid #f3e5c8; border-radius: 14px; padding: 20px; margin-top: 15px; }
+    .license-card h4 { margin: 0 0 5px; color: #0b3148; font-size: 1rem; }
+
+    /* Services Grid */
+    .services { background: var(--cream); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: #fff; border: 1px solid #e8e3d9; border-radius: 16px; padding: 28px; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+    .icon { font-size: 1.8rem; background: #eaf4f8; border-radius: 12px; width: 56px; height: 56px; display: grid; place-items: center; margin-bottom: 16px; }
+    .card h3 { margin: 0 0 8px; color: #0c334b; font-size: 1.2rem; }
+    .card p { font-size: 0.93rem; margin: 0; line-height: 1.6; }
+
+    /* Contact & Form */
+    .contact { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 30px; }
+    .panel { border-radius: 18px; padding: 30px; background: #eaf4f8; border: 1px solid #d4e5ee; }
+    .panel h3 { margin-top: 0; font-size: 1.3rem; color: #0b3148; }
+    .panel a { color: #126391; font-weight: 700; }
+    .form { background: #fff; border: 1px solid #d6e4eb; border-radius: 18px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .field { display: grid; gap: 6px; margin-bottom: 15px; }
+    .field label { font-size: 0.88rem; font-weight: 700; color: #0c334b; }
+    .field input, .field select, .field textarea { font: inherit; border: 1px solid #c6d8e1; border-radius: 9px; padding: 12px; outline: none; transition: border 0.2s; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blue); }
+    .field textarea { min-height: 100px; resize: vertical; }
+
+    /* CTA & Footer */
+    .cta { background: linear-gradient(110deg, #082b42, #126a9b); color: #fff; text-align: center; }
+    .cta h2 { color: #fff; }
+    .cta p { color: #d0e4ed; max-width: 500px; margin: 10px auto 25px; }
+    footer { background: #061d2c; color: #b5cbd7; padding: 40px 0 20px; font-size: 0.9rem; }
+    .footer { display: flex; justify-content: space-between; gap: 30px; align-items: center; }
+    .footer img { width: 110px; height: 60px; object-fit: contain; background: #fff; border-radius: 8px; padding: 4px; }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float { position: fixed; bottom: 25px; left: 25px; background: var(--whatsapp); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; font-size: 2rem; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 999; transition: transform 0.2s; }
+    .whatsapp-float:hover { transform: scale(1.08); }
+
+    @media (max-width: 768px) {
+      .links { display: none; }
+      .grid, .contact, .row, .about-box, .stats-grid { grid-template-columns: 1fr; }
+      .top .container { justify-content: center; text-align: center; }
+      .top span { display: none; }
+      section { padding: 55px 0; }
+      .footer { flex-direction: column; text-align: center; }
+      .whatsapp-float { bottom: 15px; left: 15px; width: 52px; height: 52px; font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="top">
+    <div class="container">
+      <span>شرکت خدمات سیاحتی فجر پارسا · کابل، افغانستان</span>
+      <a href="tel:+93775807016">تماس مستقیم: ۰۱۶ ۸۰۷ ۷۷۵ ۹۳+</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#home">
+          <img src="logo.png" alt="لوگوی شرکت فجر پارسا">
+          <span>فجر پارسا</span>
+        </a>
+        <div class="links">
+          <a href="#about">درباره ما</a>
+          <a href="#services">خدمات</a>
+          <a href="#contact">ارتباط با ما</a>
+          <a href="en.html" lang="en" style="font-weight:700; color:var(--blue);">English</a>
+        </div>
+        <a class="btn gold" href="#contact">مشاوره رایگان</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">سفر · تجارت · تحصیل · زیارت</div>
+        <h1>همراه معتمد شما برای هر مقصد و مسیر.</h1>
+        <p>شرکت خدمات سیاحتی فجر پارسا با ۵ سال سابقه درخشان و جواز رسمی، مطمئن‌ترین مسیر را برای سفرهای کاری، تحصیلی، تفریحی و زیارتی شما فراهم می‌سازد.</p>
+        <div class="actions">
+          <a class="btn gold" href="https://wa.me/93777377774?text=سلام%20می‌خواهم%20مشاوره%20رایگان%20دریافت%20کنم.">ارسال پیام در واتساپ</a>
+          <a class="btn outline" href="#services">مشاهده خدمات ما</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Stats -->
+    <div class="trust-bar">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <h3>۵+ سال</h3>
+          <p>سابقه و تجربه کاری درخشـان</p>
+        </div>
+        <div class="stat-item">
+          <h3>جواز رسمی ۳ ساله</h3>
+          <p>ثبت شده و دارای اعتبار قانونی</p>
+        </div>
+        <div class="stat-item">
+          <h3>۲۴/۷</h3>
+          <p>پشتیبانی و پاسخگویی مداوم</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <section id="about">
+      <div class="container">
+        <div class="about-box">
+          <div>
+            <span class="about-badge">درباره فجر پارسا</span>
+            <h2>تعهد، سرعت و شفافیت در ارائه خدمات</h2>
+            <p>شرکت خدمات سیاحتی فجر پارسا طی ۵ سال فعالیت مستمر در شهر کابل، همواره کوشیده است تا بهترین و سریع‌ترین خدمات مسافرتی را به هموطنان عزیز ارائه دهد. ما با درک حساسیت‌های زمان‌بندی و اسناد، مراحل کاری شما را با دقت بالایی مدیریت می‌کنیم.</p>
+            <div class="license-card">
+              <h4>✓ دارای جواز رسمی ۳ ساله فعالیت</h4>
+              <p style="margin:0; font-size:0.88rem;">فعالیت کاملاً قانونی، تحت نظارت ارگان‌های مربوطه جهت اطمینان خاطر شما از تمام مراحل اداری و مالی.</p>
+            </div>
+          </div>
+          <div>
+            <img src="logo.png" alt="درباره فجر پارسا" style="width:100%; max-width:380px; display:block; margin:auto; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.08));">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="intro">
+          <div class="kicker">خدمات ما</div>
+          <h2>انتخاب درست برای گام بعدی شما</h2>
+          <p>از نخستین سوال و مشاوره تا صدور اسناد و تنظیم سفر، همراه شما هستیم.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">✈</div>
+            <h3>خدمات جامع سفر</h3>
+            <p>برنامه‌ریزی دقیق، تنظیم برنامه سیر و سفر و مشاوره کامل جهت اخذ ویزا و آماده‌سازی اسناد.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🎫</div>
+            <h3>تکت‌پیما و رزرو پرواز</h3>
+            <p>صدور و رزرو آنلاین تکت‌های پرواز داخلی و بین‌المللی با مناسب‌ترین قیمت‌ها و پروازها.</p>
+          </article>
+          <article class="card">
+            <div class="icon">✉</div>
+            <h3>دعوت‌نامه‌های تجارتی</h3>
+            <p>اخذ و پیگیری رسمی دعوت‌نامه‌های کاری و تجارتی جهت رونق کسب‌وکارهای فراملی.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🎓</div>
+            <h3>خدمات ویزای تحصیلی</h3>
+            <p>رهنمایی مرحله به مرحله برای اخذ پذیرش تحصیلی، بورسیه‌ها و تنظیم مدارک دانشگاهی.</p>
+          </article>
+          <article class="card">
+            <div class="icon">☪</div>
+            <h3>حج و عمره</h3>
+            <p>ترتیبات کامل، اخذ ویزا و ثبت‌نام در پروسه‌های حج متبرکه و عمره مفرحه با شرایط ویژه.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🕌</div>
+            <h3>کاروان‌های زیارتی</h3>
+            <p>تنظیم و اعزام گروه‌های زیارتی به عتبات عالیات (کربلا، نجف) و سایر اماکن مقدسه.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Form Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="intro">
+          <div class="kicker">ارتباط با ما</div>
+          <h2>با ما در تماس باشید</h2>
+          <p>فرم زیر را خانه پر کنید تا درخواست شما مستقیماً در واتساپ آماده ارسال شود. مشاوره اولیه کاملاً رایگان است.</p>
+        </div>
+        <div class="contact">
+          <aside class="panel">
+            <h3>آدرس و مشخصات تماس</h3>
+            <p><strong>شماره تماس:</strong><br><a href="tel:+93775807016">۰۱۶ ۸۰۷ ۷۷۵ ۹۳+</a></p>
+            <p><strong>واتساپ کاری:</strong><br>
+              <a href="https://wa.me/93777377774">۰۷۴ ۳۷۷ ۷۷۷ ۹۳+</a><br>
+              <a href="https://wa.me/93785867036">۰۳۶ ۸۶۷ ۷۸۵ ۹۳+</a>
+            </p>
+            <p><strong>تلگرام:</strong><br>۰۵۰ ۲۹۹ ۷۸۲ ۹۳+</p>
+            <p><strong>ایمیل:</strong><br><a href="mailto:khoojafahim@gmail.com">khoojafahim@gmail.com</a></p>
+            <p><strong>آدرس دفتر:</strong><br>کابل، افغانستان، دشت برچی، مارکیت تجارتی پیوند، منزل دوم، دفتر شماره ۸۵.</p>
+            <p><a target="_blank" rel="noopener" href="https://www.instagram.com/fajar_e_parsa__travel_agency/">صفحه اینستاگرام ما ↗</a></p>
+          </aside>
+
+          <form class="form" id="form">
+            <div class="row">
+              <div class="field">
+                <label for="name">نام و تخلص</label>
+                <input id="name" name="name" placeholder="مثال: احمد رضایی" required>
+              </div>
+              <div class="field">
+                <label for="phone">شماره تماس / واتساپ</label>
+                <input id="phone" name="phone" placeholder="۰۷۷XXXXXXX" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="service">نوع خدمت مورد نظر</label>
+                <select id="service" name="service">
+                  <option>خدمات سفر و ویزا</option>
+                  <option>تکت‌پیما و رزرو پرواز</option>
+                  <option>دعوت‌نامه تجارتی</option>
+                  <option>خدمات تحصیلی</option>
+                  <option>حج و عمره</option>
+                  <option>کاروان زیارتی</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="destination">مقصد مورد نظر</label>
+                <input id="destination" name="destination" placeholder="مثلاً: ترکیه، ایران، دبی...">
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">شرح درخواست شما</label>
+              <textarea id="message" name="message" placeholder="سوال یا جزئیات درخواست خود را بنویسید..."></textarea>
+            </div>
+            <button class="btn gold" type="submit" style="width:100%; font-size:1rem; padding:13px;">ارسال مستقیم درخواست در واتساپ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <div class="container">
+        <h2>آماده شروع سفر یا پروسه کاری خود هستید؟</h2>
+        <p>کارشناسان فجر پارسا آماده ارائه مشاوره دقیق و رایگان به شما هستند.</p>
+        <a class="btn gold" href="https://wa.me/93777377774">پیام به واتساپ شرکت</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer">
+      <div>
+        <img src="logo.png" alt="لوگوی فجر پارسا">
+        <p style="margin: 8px 0 0; color:#8faac0;">شرکت خدمات سیاحتی، تجارتی، تحصیلی و زیارتی فجر پارسا.</p>
+      </div>
+      <div>
+        <a href="en.html" style="color:#fff; font-weight:700;">English Version</a>
+        <p style="margin:8px 0 0; color:#628196;">© ۲۰۲۶ فجر پارسا. تمامی حقوق محفوظ است.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/93777377774" class="whatsapp-float" target="_blank" rel="noopener" title="تماس مستقیم در واتساپ">💬</a>
+
+  <!-- Script Form Handler -->
+  <script>
+    document.getElementById('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const f = new FormData(e.currentTarget);
+      const m = `سلام، درخواست مشاوره جدید دارم:\n\n👤 نام: ${f.get('name')}\n📞 تماس: ${f.get('phone')}\n📋 خدمت: ${f.get('service')}\n📍 مقصد: ${f.get('destination')}\n💬 پیام: ${f.get('message')}`;
+      window.open('https://wa.me/93777377774?text=' + encodeURIComponent(m), '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>

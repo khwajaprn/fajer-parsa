@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fajer Parsa | Travel, Business & Education Services</title> <link rel="icon" type="image/png" href="logo.png">
+  <meta name="description" content="Fajer Parsa Travel Agency with 5 years experience & 3-year official license. Offering travel, business invitations, education, and pilgrimage services in Kabul.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fajer Parsa Travel Agency">
+  <meta property="og:description" content="Your trusted partner for travel, business invitations, education, and pilgrimage services in Kabul, Afghanistan.">
+  <meta property="og:image" content="logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --navy: #082e46; --blue: #11699c; --gold: #e5ad45; --cream: #f7f4ee; --muted: #58707f; --whatsapp: #25D366; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: #123040; font-family: 'Inter', sans-serif; line-height: 1.65; background: #fff; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: min(1120px, calc(100% - 38px)); margin: auto; }
+    .top { background: #08273a; color: #d7e8f1; font-size: 0.82rem; }
+    .top .container { display: flex; justify-content: space-between; padding: 8px 0; align-items: center; }
+    .top a { color: #fff; font-weight: 700; }
+    header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px); z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    nav { height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: #0b3148; font-size: 1.2rem; }
+    .brand img { width: 100px; height: 55px; object-fit: contain; }
+    .links { display: flex; gap: 22px; font-size: 0.9rem; color: #49606d; font-weight: 500; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 11px 20px; border-radius: 9px; font-weight: 700; border: 0; cursor: pointer; }
+    .gold { background: var(--gold); color: #102d3d; }
+    .outline { border: 1px solid rgba(255,255,255,0.4); color: #fff; }
+    .hero { background: linear-gradient(135deg, #082e46 0%, #061f30 100%); color: #fff; padding: 90px 0; position: relative; overflow: hidden; }
+    .hero:after { content: "✦"; position: absolute; right: 5%; bottom: -60px; font-size: 16rem; color: rgba(229, 173, 69, 0.08); pointer-events: none; }
+    .hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.5rem); line-height: 1.18; max-width: 780px; margin: 12px 0; font-weight: 800; }
+    .eyebrow { font-size: 0.8rem; font-weight: 800; letter-spacing: 0.08em; color: #f1c570; background: rgba(241, 197, 112, 0.1); padding: 4px 12px; border-radius: 20px; display: inline-block; }
+    .hero p { max-width: 650px; color: #d6e6ed; font-size: 1.05rem; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .trust-bar { background: #051c2b; border-bottom: 1px solid #103b58; color: #fff; padding: 20px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
+    .stat-item h3 { margin: 0; font-size: 1.6rem; color: var(--gold); font-weight: 800; }
+    .stat-item p { margin: 2px 0 0; font-size: 0.85rem; color: #a4c2d1; }
+    section { padding: 80px 0; }
+    .intro { max-width: 700px; margin-bottom: 35px; }
+    .kicker { font-weight: 800; font-size: 0.82rem; color: var(--blue); letter-spacing: 0.06em; }
+    h2 { font-size: clamp(1.8rem, 3vw, 2.3rem); line-height: 1.25; color: #0b3148; margin: 8px 0; font-weight: 800; }
+    p { color: var(--muted); }
+    .about-box { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: #fff; border: 1px solid #e2ecef; border-radius: 20px; padding: 40px; }
+    .about-badge { background: #eaf4f8; padding: 8px 16px; border-radius: 8px; color: var(--blue); font-weight: 700; font-size: 0.88rem; display: inline-block; margin-bottom: 15px; }
+    .license-card { background: #fdfaf3; border: 1px solid #f3e5c8; border-radius: 14px; padding: 20px; margin-top: 15px; }
+    .services { background: var(--cream); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: #fff; border: 1px solid #e8e3d9; border-radius: 16px; padding: 28px; }
+    .icon { font-size: 1.8rem; background: #eaf4f8; border-radius: 12px; width: 56px; height: 56px; display: grid; place-items: center; margin-bottom: 16px; }
+    .card h3 { margin: 0 0 8px; color: #0c334b; font-size: 1.15rem; }
+    .card p { font-size: 0.9rem; margin: 0; }
+    .contact { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 30px; }
+    .panel { border-radius: 18px; padding: 30px; background: #eaf4f8; border: 1px solid #d4e5ee; }
+    .panel a { color: #126391; font-weight: 700; }
+    .form { background: #fff; border: 1px solid #d6e4eb; border-radius: 18px; padding: 30px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .field { display: grid; gap: 6px; margin-bottom: 15px; }
+    .field label { font-size: 0.85rem; font-weight: 700; }
+    .field input, .field select, .field textarea { font: inherit; border: 1px solid #c6d8e1; border-radius: 9px; padding: 11px; }
+    .field textarea { min-height: 100px; resize: vertical; }
+    .cta { background: linear-gradient(110deg, #082b42, #126a9b); color: #fff; text-align: center; }
+    .cta h2 { color: #fff; }
+    .cta p { color: #d0e4ed; max-width: 500px; margin: 10px auto 25px; }
+    footer { background: #061d2c; color: #b5cbd7; padding: 40px 0 20px; font-size: 0.88rem; }
+    .footer { display: flex; justify-content: space-between; gap: 30px; align-items: center; }
+    .footer img { width: 110px; height: 60px; object-fit: contain; background: #fff; border-radius: 8px; padding: 4px; }
+    .whatsapp-float { position: fixed; bottom: 25px; right: 25px; background: var(--whatsapp); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; font-size: 2rem; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 999; }
+    @media (max-width: 768px) {
+      .links { display: none; }
+      .grid, .contact, .row, .about-box, .stats-grid { grid-template-columns: 1fr; }
+      .top .container { justify-content: center; }
+      .top span { display: none; }
+      section { padding: 55px 0; }
+      .footer { flex-direction: column; text-align: center; }
+      .whatsapp-float { bottom: 15px; right: 15px; width: 52px; height: 52px; font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <div class="container">
+      <span>Fajer Parsa Travel Agency / Company · Kabul, Afghanistan</span>
+      <a href="tel:+93775807016">Call: +93 775 807 016</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#home">
+          <img src="logo.png" alt="Fajer Parsa logo">
+          <span>Fajer Parsa</span>
+        </a>
+        <div class="links">
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="index.html" lang="fa" style="font-weight:700; color:var(--blue);">دری / فارسی</a>
+        </div>
+        <a class="btn gold" href="#contact">Free consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">TRAVEL · BUSINESS · EDUCATION · PILGRIMAGE</div>
+        <h1>A trusted partner for every destination.</h1>
+        <p>Fajer Parsa provides travel, business, education, and pilgrimage services backed by 5 years of experience and an official 3-year license.</p>
+        <div class="actions">
+          <a class="btn gold" href="https://wa.me/93777377774?text=Hello%2C%20I%20would%20like%20a%20free%20consultation.">Message us on WhatsApp</a>
+          <a class="btn outline" href="#services">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <h3>5+ Years</h3>
+          <p>Proven Experience</p>
+        </div>
+        <div class="stat-item">
+          <h3>3-Year License</h3>
+          <p>Officially Registered</p>
+        </div>
+        <div class="stat-item">
+          <h3>24/7 Support</h3>
+          <p>Reliable Guidance</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-box">
+          <div>
+            <span class="about-badge">ABOUT FAJER PARSA</span>
+            <h2>Commitment, Speed & Transparency</h2>
+            <p>Over the past 5 years in Kabul, Fajer Parsa has provided reliable travel solutions. We understand time-sensitive procedures and manage your applications with care.</p>
+            <div class="license-card">
+              <h4 style="margin:0 0 5px; color:#0b3148;">✓ Official 3-Year Government License</h4>
+              <p style="margin:0; font-size:0.88rem;">Operating legally to give you total peace of mind for every procedure and transaction.</p>
+            </div>
+          </div>
+          <div>
+            <img src="logo.png" alt="Fajer Parsa logo" style="width:100%; max-width:380px; display:block; margin:auto;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="intro">
+          <div class="kicker">OUR SERVICES</div>
+          <h2>The right path for your next step</h2>
+          <p>From initial questions to final arrangements, we help you make informed decisions.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">✈</div>
+            <h3>Travel Services</h3>
+            <p>Expert travel advice and itinerary planning for a smooth journey.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🎫</div>
+            <h3>Tickets & Booking</h3>
+            <p>Domestic and international flight ticketing at competitive rates.</p>
+          </article>
+          <article class="card">
+            <div class="icon">✉</div>
+            <h3>Business Invitations</h3>
+            <p>Official guidance for work and business invitation procedures.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🎓</div>
+            <h3>Education Services</h3>
+            <p>Step-by-step application guidance for international study pathways.</p>
+          </article>
+          <article class="card">
+            <div class="icon">☪</div>
+            <h3>Hajj & Umrah</h3>
+            <p>Thoughtful support and planning for sacred Hajj and Umrah journeys.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🕌</div>
+            <h3>Pilgrimage Groups</h3>
+            <p>Organized departures for Karbala and other pilgrimage sites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="intro">
+          <div class="kicker">CONTACT</div>
+          <h2>Tell us how we can help.</h2>
+          <p>Submit this form to open a ready message in WhatsApp. Consultation is free.</p>
+        </div>
+        <div class="contact">
+          <aside class="panel">
+            <h3 style="margin-top:0;">Fajer Parsa Travel Agency</h3>
+            <p><strong>Call:</strong> <a href="tel:+93775807016">+93 775 807 016</a></p>
+            <p><strong>WhatsApp:</strong><br><a href="https://wa.me/93777377774">+93 777 377 774</a><br><a href="https://wa.me/93785867036">+93 785 867 036</a></p>
+            <p><strong>Telegram:</strong> +93 782 299 050</p>
+            <p><a href="mailto:khoojafahim@gmail.com">khoojafahim@gmail.com</a></p>
+            <p>Paywand Commercial Market, 2nd Floor, Office 85, Dasht-e Barchi, Kabul, Afghanistan.</p>
+            <p><a target="_blank" rel="noopener" href="https://www.instagram.com/fajar_e_parsa__travel_agency/">Instagram Page ↗</a></p>
+          </aside>
+
+          <form class="form" id="form">
+            <div class="row">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" required></div>
+              <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" required></div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option>Travel Services</option>
+                  <option>Tickets & Booking</option>
+                  <option>Business Invitation</option>
+                  <option>Education Service</option>
+                  <option>Hajj & Umrah</option>
+                  <option>Pilgrimage Group</option>
+                </select>
+              </div>
+              <div class="field"><label for="destination">Destination</label><input id="destination" name="destination" placeholder="e.g. Turkey"></div>
+            </div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message"></textarea></div>
+            <button class="btn gold" type="submit" style="width:100%; font-size:1rem; padding:13px;">Send request on WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to begin your journey?</h2>
+        <p>Contact Fajer Parsa today for a free consultation.</p>
+        <a class="btn gold" href="https://wa.me/93777377774">WhatsApp Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div>
+        <img src="logo.png" alt="Fajer Parsa logo">
+        <p style="margin: 8px 0 0; color:#8faac0;">Travel, business, education and pilgrimage services from Kabul.</p>
+      </div>
+      <div>
+        <a href="index.html" style="color:#fff; font-weight:700;">دری / فارسی Version</a>
+        <p style="margin:8px 0 0; color:#628196;">© 2026 Fajer Parsa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/93777377774" class="whatsapp-float" target="_blank" rel="noopener" title="Message on WhatsApp">💬</a>
+
+  <script>
+    document.getElementById('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const f = new FormData(e.currentTarget);
+      const m = `Hello, I would like a consultation.\n\nName: ${f.get('name')}\nPhone: ${f.get('phone')}\nService: ${f.get('service')}\nDestination: ${f.get('destination')}\nMessage: ${f.get('message')}`;
+      window.open('https://wa.me/93777377774?text=' + encodeURIComponent(m), '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
