@@ -1,32 +1,40 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fajer Parsa Travel Agency | Travel, Study & Pilgrimage</title>
-  <meta name="description" content="Fajer Parsa Travel Agency in Kabul. Over 5 years of experience in flights, business visas, study visas, and Hajj/Umrah services.">
+  <title>شرکت خدمات سیاحتی فجر پارسا | خدمات سفر، تحصیلی و زیارتی</title>
+  <meta name="description" content="شرکت خدمات سیاحتی فجر پارسا با ۵ سال سابقه و جواز رسمی: ارائه خدمات تکت‌پیما، دعوت‌نامه تجارتی، ویزای تحصیلی و زیارت در کابل.">
   <link rel="icon" type="image/png" href="logo.png">
 
-  <!-- Inter Font -->
+  <!-- فونت Vazirmatn -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --navy: #082e46; --blue: #11699c; --gold: #e5ad45; --gold-hover: #d49c34;
-      --cream: #f7f9fa; --muted: #58707f; --whatsapp: #25D366; --dark-blue: #051c2b;
+      --navy: #082e46;
+      --blue: #11699c;
+      --gold: #e5ad45;
+      --gold-hover: #d49c34;
+      --cream: #f7f9fa;
+      --muted: #58707f;
+      --whatsapp: #25D366;
+      --dark-blue: #051c2b;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; color: #123040; font-family: 'Inter', sans-serif; line-height: 1.7; background: #fff; overflow-x: hidden; }
+    body { margin: 0; color: #123040; font-family: 'Vazirmatn', Tahoma, sans-serif; line-height: 1.7; background: #fff; overflow-x: hidden; }
     a { text-decoration: none; color: inherit; }
     .container { width: min(1200px, calc(100% - 40px)); margin: auto; }
     
-    /* Scroll Animations */
+    /* انیمیشن‌های اسکرول (Reveal) */
     .reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
     .reveal.active { opacity: 1; transform: translateY(0); }
-    .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
 
     /* Topbar & Header */
     .top { background: var(--dark-blue); color: #d7e8f1; font-size: 0.85rem; }
@@ -34,9 +42,9 @@
     .top a { color: #fff; font-weight: 700; }
     header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 100; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
     nav { height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; color: #0b3148; font-size: 1.35rem; letter-spacing: -0.5px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; color: #0b3148; font-size: 1.35rem; }
     .brand img { width: 100px; height: 55px; object-fit: contain; transition: transform 0.3s ease; }
-    .brand:hover img { transform: scale(1.05) rotate(2deg); }
+    .brand:hover img { transform: scale(1.05) rotate(-2deg); }
     .links { display: flex; gap: 24px; font-size: 0.95rem; color: #49606d; font-weight: 500; }
     .links a:hover { color: var(--blue); }
     .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 10px; font-weight: 700; border: 0; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
@@ -53,8 +61,8 @@
       color: #fff; padding: 120px 0 110px; position: relative; overflow: hidden;
     }
     .hero-content { animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1); }
-    .hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.1; max-width: 850px; margin: 15px 0; font-weight: 900; letter-spacing: -1px; }
-    .eyebrow { font-size: 0.85rem; font-weight: 800; color: #f1c570; background: rgba(241, 197, 112, 0.15); padding: 8px 18px; border-radius: 30px; display: inline-block; border: 1px solid rgba(241, 197, 112, 0.3); text-transform: uppercase; letter-spacing: 1px; }
+    .hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.2; max-width: 850px; margin: 15px 0; font-weight: 900; }
+    .eyebrow { font-size: 0.9rem; font-weight: 800; color: #f1c570; background: rgba(241, 197, 112, 0.15); padding: 8px 18px; border-radius: 30px; display: inline-block; border: 1px solid rgba(241, 197, 112, 0.3); }
     .hero p { max-width: 700px; color: #e1edf3; font-size: 1.2rem; font-weight: 300; margin-bottom: 35px; }
     .actions { display: flex; gap: 15px; flex-wrap: wrap; }
 
@@ -64,18 +72,18 @@
     .stat-item h3 { margin: 0; font-size: 2rem; color: var(--gold); font-weight: 900; }
     .stat-item p { margin: 4px 0 0; font-size: 0.95rem; color: #a4c2d1; }
 
-    /* Layout */
+    /* General Layout */
     section { padding: 100px 0; }
     .intro { max-width: 750px; margin-bottom: 50px; }
-    .kicker { font-weight: 800; font-size: 0.85rem; color: var(--blue); text-transform: uppercase; letter-spacing: 1px; }
-    h2 { font-size: clamp(2rem, 3.5vw, 2.6rem); line-height: 1.2; color: #0b3148; margin: 8px 0; font-weight: 900; letter-spacing: -0.5px; }
+    .kicker { font-weight: 800; font-size: 0.9rem; color: var(--blue); text-transform: uppercase; letter-spacing: 0.5px; }
+    h2 { font-size: clamp(2rem, 3.5vw, 2.6rem); line-height: 1.3; color: #0b3148; margin: 8px 0; font-weight: 900; }
 
-    /* About */
+    /* About Section */
     .about-box { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; background: #fff; border-radius: 30px; padding: 50px; box-shadow: 0 15px 40px rgba(0,0,0,0.04); border: 1px solid #eef3f5; }
-    .about-badge { background: #eaf4f8; padding: 8px 18px; border-radius: 30px; color: var(--blue); font-weight: 700; font-size: 0.85rem; margin-bottom: 15px; display: inline-block; text-transform: uppercase; letter-spacing: 1px; }
-    .license-card { background: #fdfaf3; border: 1px solid #f3e5c8; border-radius: 16px; padding: 22px; margin-top: 25px; border-left: 5px solid var(--gold); }
+    .about-badge { background: #eaf4f8; padding: 8px 18px; border-radius: 30px; color: var(--blue); font-weight: 700; font-size: 0.9rem; margin-bottom: 15px; display: inline-block; }
+    .license-card { background: #fdfaf3; border: 1px solid #f3e5c8; border-radius: 16px; padding: 22px; margin-top: 25px; border-right: 5px solid var(--gold); }
 
-    /* Services Grid */
+    /* Services Grid with Images */
     .services { background: var(--cream); }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
     .card { 
@@ -84,6 +92,7 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
       height: 340px; display: flex; flex-direction: column; justify-content: flex-end;
     }
+    /* Gradient overlay for cards */
     .card::before {
       content: ''; position: absolute; inset: 0;
       background: linear-gradient(180deg, rgba(5,28,43,0.1) 0%, rgba(5,28,43,0.95) 100%);
@@ -93,7 +102,7 @@
     .card:hover::before { background: linear-gradient(180deg, rgba(17,105,156,0.3) 0%, rgba(5,28,43,0.98) 100%); }
     .card > * { position: relative; z-index: 2; color: #fff; }
     .card .icon { font-size: 2.5rem; margin-bottom: auto; display: inline-block; background: rgba(255,255,255,0.2); backdrop-filter: blur(5px); width: 60px; height: 60px; border-radius: 14px; text-align: center; line-height: 60px; border: 1px solid rgba(255,255,255,0.3); }
-    .card h3 { margin: 0 0 8px; font-size: 1.4rem; font-weight: 800; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+    .card h3 { margin: 0 0 8px; font-size: 1.4rem; font-weight: 800; color: #fff; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
     .card p { font-size: 0.95rem; margin: 0; line-height: 1.6; color: #d7e8f1; }
 
     /* Destinations Grid */
@@ -105,20 +114,26 @@
     .dest-overlay h3 { margin: 0; font-size: 1.3rem; font-weight: 900; }
     .dest-overlay span { font-size: 0.9rem; color: #f1c570; font-weight: 500; }
 
-    /* Contact & Form */
+    /* Testimonials */
+    .testimonials { background: #fff; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+    .review-card { background: var(--cream); padding: 30px; border-radius: 20px; border: 1px solid #e2ecef; transition: transform 0.3s; }
+    .review-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    .stars { color: var(--gold); margin-bottom: 12px; font-size: 1.2rem; }
+
+    /* Contact & Footer */
     .contact { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 40px; }
     .panel { border-radius: 24px; padding: 40px; background: #eaf4f8; border: 1px solid #d4e5ee; }
     .form { background: #fff; border: 1px solid #d6e4eb; border-radius: 24px; padding: 40px; box-shadow: 0 15px 40px rgba(0,0,0,0.04); }
     .row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .field { display: grid; gap: 8px; margin-bottom: 20px; }
-    .field label { font-size: 0.85rem; font-weight: 700; color: #0c334b; text-transform: uppercase; letter-spacing: 0.5px; }
     .field input, .field select, .field textarea { font: inherit; border: 2px solid #e1e9ed; border-radius: 12px; padding: 14px; transition: all 0.3s; }
-    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 4px rgba(17,105,156,0.1); outline:none; }
-    
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 4px rgba(17,105,156,0.1); }
+    .cta { background: linear-gradient(135deg, #082b42 0%, #126a9b 100%); color: #fff; text-align: center; padding: 90px 0; }
     footer { background: #041622; color: #b5cbd7; padding: 50px 0 30px; font-size: 0.95rem; }
 
     /* WhatsApp Button */
-    .whatsapp-float { position: fixed; bottom: 35px; right: 35px; background: var(--whatsapp); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: grid; place-items: center; font-size: 2.2rem; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); z-index: 999; transition: transform 0.3s; animation: pulse 2s infinite; }
+    .whatsapp-float { position: fixed; bottom: 35px; left: 35px; background: var(--whatsapp); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: grid; place-items: center; font-size: 2.2rem; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); z-index: 999; transition: transform 0.3s; animation: pulse 2s infinite; }
     
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); } 70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
@@ -131,26 +146,25 @@
     @media (max-width: 768px) {
       .links, .top span { display: none; }
       .top .container { justify-content: center; }
-      .grid, .contact, .row, .stats-grid, .destinations-grid, .about-box { grid-template-columns: 1fr; }
+      .grid, .contact, .row, .stats-grid, .destinations-grid, .reviews-grid, .about-box { grid-template-columns: 1fr; }
       section { padding: 60px 0; }
       .dest-card { height: 250px; }
-      .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
 
-  <div class="top"><div class="container"><span>Fajer Parsa Travel Agency · Kabul, Afghanistan</span><a href="tel:+93775807016">Direct Call: +93 775 807 016</a></div></div>
+  <div class="top"><div class="container"><span>شرکت خدمات سیاحتی فجر پارسا · کابل، افغانستان</span><a href="tel:+93775807016">تماس مستقیم: ۰۱۶ ۸۰۷ ۷۷۵ ۹۳+</a></div></div>
 
   <header>
     <div class="container">
       <nav>
-        <a class="brand" href="#home"><img src="logo.png" alt="Fajer Parsa Logo"><span>Fajer Parsa</span></a>
+        <a class="brand" href="#home"><img src="logo.png" alt="لوگوی فجر پارسا"><span>فجر پارسا</span></a>
         <div class="links">
-          <a href="#about">About Us</a><a href="#services">Services</a><a href="#destinations">Destinations</a><a href="#contact">Contact</a>
-          <a href="index.html" lang="fa" style="font-weight:800; color:var(--blue); background:#eaf4f8; padding:6px 12px; border-radius:8px;">فارسی</a>
+          <a href="#about">درباره ما</a><a href="#services">خدمات</a><a href="#destinations">مقاصد</a><a href="#contact">ارتباط با ما</a>
+          <a href="en.html" lang="en" style="font-weight:800; color:var(--blue); background:#eaf4f8; padding:6px 12px; border-radius:8px;">EN</a>
         </div>
-        <a class="btn gold" href="#contact">Free Consultation</a>
+        <a class="btn gold" href="#contact">مشاوره رایگان</a>
       </nav>
     </div>
   </header>
@@ -158,99 +172,101 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-content">
-        <div class="eyebrow">✈ Travel · Business · Study · Ziyarat</div>
-        <h1>Your trusted partner for every destination.</h1>
-        <p>With 5 years of brilliant experience and an official license, Fajer Parsa provides the safest path for your business, educational, and pilgrimage journeys.</p>
-        <div class="actions"><a class="btn gold" href="https://wa.me/93777377774">WhatsApp Us Now</a><a class="btn outline" href="#services">Explore Services</a></div>
+        <div class="eyebrow">✈ پرواز · تجارت · تحصیل · زیارت</div>
+        <h1>همراه معتمد و مطمئن شما برای هر مقصد و مسیر.</h1>
+        <p>شرکت خدمات سیاحتی فجر پارسا با ۵ سال سابقه درخشان، مطمئن‌ترین مسیر را برای سفرهای کاری، تحصیلی و زیارتی شما فراهم می‌سازد.</p>
+        <div class="actions"><a class="btn gold" href="https://wa.me/93777377774">پیام آنی در واتساپ</a><a class="btn outline" href="#services">مشاهده خدمات ما</a></div>
       </div>
     </section>
 
     <div class="trust-bar reveal">
       <div class="container stats-grid">
-        <div class="stat-item"><h3>5+ Years</h3><p>Of Brilliant Experience</p></div>
-        <div class="stat-item"><h3>Official License</h3><p>Registered & Verified</p></div>
-        <div class="stat-item"><h3>24/7</h3><p>Fast Support</p></div>
+        <div class="stat-item"><h3>۵+ سال</h3><p>سابقه کاری درخشان</p></div>
+        <div class="stat-item"><h3>جواز رسمی</h3><p>ثبت شده و معتبر</p></div>
+        <div class="stat-item"><h3>۲۴/۷</h3><p>پشتیبانی سریع</p></div>
       </div>
     </div>
 
     <section id="about" class="reveal">
       <div class="container about-box">
         <div>
-          <span class="about-badge">About Fajer Parsa</span>
-          <h2>Commitment, Speed & Transparency</h2>
-          <p>Understanding the sensitivity of timing and documents, Fajer Parsa Travel Agency manages your procedures with high precision to ensure a hassle-free journey.</p>
-          <div class="license-card"><h4>✓ Official 3-Year Operational License</h4><p style="margin:0; font-size:0.9rem;">100% guarantee of the security of your documents and financial affairs.</p></div>
+          <span class="about-badge">درباره فجر پارسا</span>
+          <h2>تعهد، سرعت و شفافیت در ارائه خدمات سیاحتی</h2>
+          <p>شرکت فجر پارسا با درک حساسیت‌های زمان‌بندی و اسناد، مراحل کاری شما را با دقت بالایی مدیریت می‌کند تا سفری بدون دغدغه داشته باشید.</p>
+          <div class="license-card"><h4>✓ دارای جواز رسمی ۳ ساله فعالیت قانونی</h4><p style="margin:0; font-size:0.9rem;">تضمین ۱۰۰٪ امنیت اسناد و امور مالی شما.</p></div>
         </div>
-        <div><img src="logo.png" alt="About Us" style="width:100%; max-width:380px; margin:auto; display:block; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15)); transform: scale(1.1);"></div>
+        <div><img src="logo.png" alt="درباره ما" style="width:100%; max-width:380px; margin:auto; display:block; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15)); transform: scale(1.1);"></div>
       </div>
     </section>
 
     <section class="services" id="services">
       <div class="container">
-        <div class="intro reveal"><div class="kicker">Our Specialized Services</div><h2>The Right Choice for Your Next Step</h2></div>
+        <div class="intro reveal">
+          <div class="kicker">خدمات تخصصی ما</div><h2>انتخاب درست برای گام بعدی شما</h2>
+        </div>
         <div class="grid">
-          <!-- Background Images for Services -->
+          <!-- با استفاده از تصاویر واقعی در بکگراند هر کارت -->
           <article class="card reveal delay-1" style="background: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80') center/cover;">
-            <div class="icon">✈</div><h3>Travel & Visa Services</h3><p>Full consultation for obtaining visas and preparing travel documents.</p>
+            <div class="icon">✈</div><h3>خدمات سفر و ویزا</h3><p>مشاوره کامل جهت اخذ ویزا و آماده‌سازی اسناد مسافرتی.</p>
           </article>
           <article class="card reveal delay-2" style="background: url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=600&q=80') center/cover;">
-            <div class="icon">🎫</div><h3>Flight Tickets</h3><p>Fast issuance of domestic and international tickets at the best rates.</p>
+            <div class="icon">🎫</div><h3>تکت‌پیما و پرواز</h3><p>صدور سریع تکت‌های داخلی و خارجی با مناسب‌ترین نرخ.</p>
           </article>
           <article class="card reveal delay-3" style="background: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80') center/cover;">
-            <div class="icon">💼</div><h3>Business Invitations</h3><p>Obtaining official business invitations to boost your enterprise.</p>
+            <div class="icon">💼</div><h3>دعوت‌نامه‌های تجارتی</h3><p>اخذ دعوت‌نامه‌های کاری جهت سفر و رونق کسب‌وکار.</p>
           </article>
           <article class="card reveal delay-1" style="background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80') center/cover;">
-            <div class="icon">🎓</div><h3>Study Visas</h3><p>Step-by-step guidance for university admissions and scholarships.</p>
+            <div class="icon">🎓</div><h3>ویزای تحصیلی</h3><p>اخذ پذیرش تحصیلی، بورسیه‌ها و تنظیم مدارک دانشگاهی.</p>
           </article>
           <article class="card reveal delay-2" style="background: url('https://images.unsplash.com/photo-1580418827493-f2b22c0a2805?w=600&q=80') center/cover;">
-            <div class="icon">🕋</div><h3>Hajj & Umrah</h3><p>Complete arrangements, visa processing, and holy journey registrations.</p>
+            <div class="icon">🕋</div><h3>حج و عمره</h3><p>ترتیبات کامل، اخذ ویزا و ثبت‌نام در پروسه‌های متبرکه.</p>
           </article>
           <article class="card reveal delay-3" style="background: url('https://images.unsplash.com/photo-1542404060-84a86b1f28b7?w=600&q=80') center/cover;">
-            <div class="icon">🕌</div><h3>Ziyarat Caravans</h3><p>Organized dispatch of pilgrimage groups to holy shrines.</p>
+            <div class="icon">🕌</div><h3>کاروان‌های زیارتی</h3><p>اعزام منظم گروه‌های زیارتی به عتبات عالیات.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Popular Destinations: 8 Countries -->
+    <!-- مقاصد محبوب با ۸ کشور و عکس‌های باکیفیت -->
     <section id="destinations">
       <div class="container">
-        <div class="intro reveal"><div class="kicker">Popular Routes</div><h2>Top Destinations</h2></div>
+        <div class="intro reveal"><div class="kicker">مسیرهای پرطرفدار</div><h2>مقاصد محبوب مسافران ما</h2></div>
         <div class="destinations-grid">
-          <div class="dest-card reveal"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&q=80" alt="Turkey"><div class="dest-overlay"><h3>Turkey (Istanbul)</h3><span>Tourism, Business & Study</span></div></div>
-          <div class="dest-card reveal delay-1"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80" alt="UAE"><div class="dest-overlay"><h3>UAE (Dubai)</h3><span>Flights & Business</span></div></div>
-          <div class="dest-card reveal delay-2"><img src="https://images.unsplash.com/photo-1580418827493-f2b22c0a2805?w=800&q=80" alt="Saudi Arabia"><div class="dest-overlay"><h3>Saudi Arabia</h3><span>Hajj & Umrah</span></div></div>
-          <div class="dest-card reveal delay-3"><img src="https://images.unsplash.com/photo-1583087328114-169542a27b87?w=800&q=80" alt="Iraq"><div class="dest-overlay"><h3>Iraq (Karbala & Najaf)</h3><span>Pilgrimage Caravans</span></div></div>
+          <div class="dest-card reveal"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&q=80" alt="ترکیه"><div class="dest-overlay"><h3>ترکیه (استانبول)</h3><span>سیاحتی، تجارتی و تحصیلی</span></div></div>
+          <div class="dest-card reveal delay-1"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80" alt="امارات"><div class="dest-overlay"><h3>امارات (دبی)</h3><span>تکت‌پیما و تجارتی</span></div></div>
+          <div class="dest-card reveal delay-2"><img src="https://images.unsplash.com/photo-1580418827493-f2b22c0a2805?w=800&q=80" alt="عربستان"><div class="dest-overlay"><h3>عربستان</h3><span>حج و عمره متبرکه</span></div></div>
+          <div class="dest-card reveal delay-3"><img src="https://images.unsplash.com/photo-1583087328114-169542a27b87?w=800&q=80" alt="عراق"><div class="dest-overlay"><h3>عراق (کربلا و نجف)</h3><span>کاروان‌های زیارتی</span></div></div>
           
-          <div class="dest-card reveal"><img src="https://images.unsplash.com/photo-1578306899479-798d1a100650?w=800&q=80" alt="Iran"><div class="dest-overlay"><h3>Iran (Tehran & Mashhad)</h3><span>Tourism, Medical & Ziyarat</span></div></div>
-          <div class="dest-card reveal delay-1"><img src="https://images.unsplash.com/photo-1627885441586-7a7187c32028?w=800&q=80" alt="Pakistan"><div class="dest-overlay"><h3>Pakistan (Islamabad)</h3><span>Business & Medical Visas</span></div></div>
-          <div class="dest-card reveal delay-2"><img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800&q=80" alt="Russia"><div class="dest-overlay"><h3>Russia (Moscow)</h3><span>Study & Work Visas</span></div></div>
-          <div class="dest-card reveal delay-3"><img src="https://images.unsplash.com/photo-1622397441512-ebce59c1cde6?w=800&q=80" alt="Tajikistan"><div class="dest-overlay"><h3>Tajikistan (Dushanbe)</h3><span>Tourism & Business</span></div></div>
+          <div class="dest-card reveal"><img src="https://images.unsplash.com/photo-1578306899479-798d1a100650?w=800&q=80" alt="ایران"><div class="dest-overlay"><h3>ایران (تهران و مشهد)</h3><span>سیاحتی، درمانی و زیارتی</span></div></div>
+          <div class="dest-card reveal delay-1"><img src="https://images.unsplash.com/photo-1627885441586-7a7187c32028?w=800&q=80" alt="پاکستان"><div class="dest-overlay"><h3>پاکستان (اسلام‌آباد)</h3><span>ویزای تجارتی و درمانی</span></div></div>
+          <div class="dest-card reveal delay-2"><img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800&q=80" alt="روسیه"><div class="dest-overlay"><h3>روسیه (مسکو)</h3><span>ویزای تحصیلی و کاری</span></div></div>
+          <div class="dest-card reveal delay-3"><img src="https://images.unsplash.com/photo-1622397441512-ebce59c1cde6?w=800&q=80" alt="تاجیکستان"><div class="dest-overlay"><h3>تاجیکستان (دوشنبه)</h3><span>سیاحتی و تجارتی</span></div></div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="services">
       <div class="container reveal">
-        <div class="intro"><div class="kicker">Get in Touch</div><h2>Contact Us</h2></div>
+        <div class="intro"><div class="kicker">ارتباط با ما</div><h2>با ما در تماس باشید</h2></div>
         <div class="contact">
           <aside class="panel">
-            <h3 style="margin-top:0; color:#0b3148;">Contact Info</h3>
-            <p><strong>Phone:</strong><br><a href="tel:+93775807016">+93 775 807 016</a></p>
-            <p><strong>WhatsApp:</strong><br><a href="https://wa.me/93777377774">+93 777 377 774</a><br><a href="https://wa.me/93785867036">+93 785 867 036</a></p>
-            <p><strong>Email:</strong><br><a href="mailto:khoojafahim@gmail.com">khoojafahim@gmail.com</a></p>
-            <p><strong>Address:</strong> Office 85, 2nd Floor, Peywand Commercial Market, Dasht-e-Barchi, Kabul.</p>
+            <h3 style="margin-top:0; color:#0b3148;">مشخصات تماس</h3>
+            <p><strong>شماره تماس:</strong><br><a href="tel:+93775807016">۰۱۶ ۸۰۷ ۷۷۵ ۹۳+</a></p>
+            <p><strong>واتساپ کاری:</strong><br><a href="https://wa.me/93777377774">۰۷۴ ۳۷۷ ۷۷۷ ۹۳+</a><br><a href="https://wa.me/93785867036">۰۳۶ ۸۶۷ ۷۸۵ ۹۳+</a></p>
+            <p><strong>ایمیل:</strong><br><a href="mailto:khoojafahim@gmail.com">khoojafahim@gmail.com</a></p>
+            <p><strong>آدرس:</strong> کابل، دشت برچی، مارکیت پیوند، منزل دوم، دفتر ۸۵.</p>
           </aside>
           <form class="form" id="form">
             <div class="row">
-              <div class="field"><label>Full Name</label><input name="name" required></div>
-              <div class="field"><label>WhatsApp Number</label><input name="phone" required></div>
+              <div class="field"><label>نام و تخلص</label><input name="name" required></div>
+              <div class="field"><label>شماره واتساپ</label><input name="phone" required></div>
             </div>
-            <div class="field"><label>Service Type</label>
-              <select name="service"><option>Tourism/Business Visa</option><option>Flight Tickets</option><option>Study Visa</option><option>Pilgrimage/Hajj</option></select>
+            <div class="field"><label>نوع درخواست</label>
+              <select name="service"><option>ویزای سیاحتی/تجارتی</option><option>تکت‌پیما</option><option>ویزای تحصیلی</option><option>زیارتی و حج</option></select>
             </div>
-            <div class="field"><label>Your Message</label><textarea name="message" rows="3"></textarea></div>
-            <button class="btn gold" type="submit" style="width:100%; font-size:1.1rem; padding:16px;">Send via WhatsApp</button>
+            <div class="field"><label>پیام شما</label><textarea name="message" rows="3"></textarea></div>
+            <button class="btn gold" type="submit" style="width:100%; font-size:1.1rem; padding:16px;">ارسال در واتساپ</button>
           </form>
         </div>
       </div>
@@ -259,24 +275,24 @@
 
   <footer class="reveal">
     <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-      <div><img src="logo.png" alt="Logo" style="width:100px; background:#fff; border-radius:8px; padding:5px;"><p style="color:#8faac0;">Fajer Parsa Travel Agency</p></div>
-      <div style="text-align:right;"><a href="index.html" style="color:#fff; font-weight:700;">Persian Version (فارسی)</a><p style="color:#628196;">© 2026 All Rights Reserved.</p></div>
+      <div><img src="logo.png" alt="لوگو" style="width:100px; background:#fff; border-radius:8px; padding:5px;"><p style="color:#8faac0;">شرکت خدمات سیاحتی فجر پارسا</p></div>
+      <div style="text-align:left;"><a href="en.html" style="color:#fff; font-weight:700;">English Version</a><p style="color:#628196;">© ۲۰۲۶ تمامی حقوق محفوظ است.</p></div>
     </div>
   </footer>
 
   <a href="https://wa.me/93777377774" class="whatsapp-float" target="_blank" rel="noopener">💬</a>
 
   <script>
-    // Scroll Animations Observer
+    // فعال‌سازی انیمیشن‌ها هنگام اسکرول
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('active'); });
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // WhatsApp Form Submit
+    // ارسال فرم به واتساپ
     document.getElementById('form').addEventListener('submit', function(e) {
       e.preventDefault(); const f = new FormData(e.currentTarget);
-      const m = `Hello, new request:\nName: ${f.get('name')}\nContact: ${f.get('phone')}\nService: ${f.get('service')}\nMessage: ${f.get('message')}`;
+      const m = `سلام، درخواست:\nنام: ${f.get('name')}\nتماس: ${f.get('phone')}\nدرخواست: ${f.get('service')}\nپیام: ${f.get('message')}`;
       window.open('https://wa.me/93777377774?text=' + encodeURIComponent(m), '_blank');
     });
   </script>
