@@ -3,120 +3,178 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>شرکت خدمات سیاحتی فجر پارسا | خدمات سفر، تحصیلی و زیارتی</title> <link rel="icon" type="image/png" href="logo.png">
+  <title>شرکت خدمات سیاحتی فجر پارسا | خدمات سفر، تحصیلی و زیارتی</title>
   <meta name="description" content="شرکت خدمات سیاحتی فجر پارسا با ۵ سال سابقه و جواز رسمی ۳ ساله: ارائه خدمات تکت‌پیما، دعوت‌نامه تجارتی، ویزای تحصیلی، حج، عمره و زیارت در کابل.">
-  
-  <!-- Open Graph / پیش‌نمایش شبکه‌های اجتماعی -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="شرکت خدمات سیاحتی فجر پارسا">
   <meta property="og:description" content="همراه معتمد شما برای خدمات سفر، ویزای تحصیلی، دعوت‌نامه تجارتی و تورهای زیارتی.">
   <meta property="og:image" content="logo.png">
 
-  <!-- فونت اصلی دری -->
+  <!-- فونت Vazirmatn -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --navy: #082e46;
       --blue: #11699c;
       --gold: #e5ad45;
-      --cream: #f7f4ee;
+      --gold-hover: #d49c34;
+      --cream: #f7f9fa;
       --muted: #58707f;
       --whatsapp: #25D366;
+      --dark-blue: #051c2b;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; color: #123040; font-family: 'Vazirmatn', Tahoma, sans-serif; line-height: 1.7; background: #fff; }
+    body { margin: 0; color: #123040; font-family: 'Vazirmatn', Tahoma, sans-serif; line-height: 1.7; background: #fff; overflow-x: hidden; }
     a { text-decoration: none; color: inherit; }
-    .container { width: min(1120px, calc(100% - 38px)); margin: auto; }
+    .container { width: min(1140px, calc(100% - 38px)); margin: auto; }
     
     /* Topbar & Header */
-    .top { background: #08273a; color: #d7e8f1; font-size: 0.85rem; }
+    .top { background: var(--dark-blue); color: #d7e8f1; font-size: 0.85rem; }
     .top .container { display: flex; justify-content: space-between; padding: 8px 0; align-items: center; }
     .top a { color: #fff; font-weight: 700; }
-    header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px); z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(10px); z-index: 100; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
     nav { height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; color: #0b3148; font-size: 1.2rem; }
-    .brand img { width: 100px; height: 55px; object-fit: contain; }
-    .links { display: flex; gap: 22px; font-size: 0.95rem; color: #49606d; font-weight: 500; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; color: #0b3148; font-size: 1.25rem; }
+    .brand img { width: 100px; height: 55px; object-fit: contain; transition: transform 0.3s ease; }
+    .brand:hover img { transform: scale(1.05); }
+    .links { display: flex; gap: 24px; font-size: 0.95rem; color: #49606d; font-weight: 500; }
+    .links a { transition: color 0.2s ease; }
     .links a:hover { color: var(--blue); }
-    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 11px 20px; border-radius: 9px; font-weight: 700; border: 0; cursor: pointer; transition: 0.2s ease; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 10px; font-weight: 700; border: 0; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
     .gold { background: var(--gold); color: #102d3d; }
-    .gold:hover { background: #d49c34; }
-    .outline { border: 1px solid rgba(255,255,255,0.4); color: #fff; }
-    .outline:hover { background: rgba(255,255,255,0.1); }
+    .gold:hover { background: var(--gold-hover); }
+    .outline { border: 2px solid rgba(255,255,255,0.5); color: #fff; background: rgba(255,255,255,0.08); backdrop-filter: blur(4px); }
+    .outline:hover { background: #fff; color: var(--navy); border-color: #fff; }
 
-    /* Hero Section */
-    .hero { background: linear-gradient(135deg, #082e46 0%, #061f30 100%); color: #fff; padding: 90px 0; position: relative; overflow: hidden; }
-    .hero:after { content: "✦"; position: absolute; left: 5%; bottom: -60px; font-size: 16rem; color: rgba(229, 173, 69, 0.08); pointer-events: none; }
-    .hero h1 { font-size: clamp(2.1rem, 4.5vw, 3.4rem); line-height: 1.25; max-width: 780px; margin: 12px 0; font-weight: 800; }
-    .eyebrow { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.05em; color: #f1c570; background: rgba(241, 197, 112, 0.1); padding: 4px 12px; border-radius: 20px; display: inline-block; }
-    .hero p { max-width: 650px; color: #d6e6ed; font-size: 1.1rem; }
-    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    /* Hero Section with Dynamic Background */
+    .hero { 
+      background: linear-gradient(180deg, rgba(8, 46, 70, 0.85) 0%, rgba(5, 28, 43, 0.92) 100%), 
+                  url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat fixed;
+      color: #fff; 
+      padding: 110px 0 100px; 
+      position: relative; 
+    }
+    .hero-content { animation: fadeInUp 0.8s ease-out; }
+    .hero h1 { font-size: clamp(2.2rem, 4.8vw, 3.6rem); line-height: 1.25; max-width: 800px; margin: 15px 0; font-weight: 900; letter-spacing: -0.5px; }
+    .eyebrow { font-size: 0.88rem; font-weight: 800; color: #f1c570; background: rgba(241, 197, 112, 0.15); padding: 6px 16px; border-radius: 30px; display: inline-block; border: 1px solid rgba(241, 197, 112, 0.3); }
+    .hero p { max-width: 680px; color: #e1edf3; font-size: 1.15rem; font-weight: 300; margin-bottom: 30px; }
+    .actions { display: flex; gap: 15px; flex-wrap: wrap; }
 
     /* Trust Stats Bar */
-    .trust-bar { background: #051c2b; border-bottom: 1px solid #103b58; color: #fff; padding: 20px 0; }
+    .trust-bar { background: var(--dark-blue); border-bottom: 1px solid #103b58; color: #fff; padding: 25px 0; }
     .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
-    .stat-item h3 { margin: 0; font-size: 1.6rem; color: var(--gold); font-weight: 800; }
-    .stat-item p { margin: 2px 0 0; font-size: 0.85rem; color: #a4c2d1; }
+    .stat-item h3 { margin: 0; font-size: 1.8rem; color: var(--gold); font-weight: 800; }
+    .stat-item p { margin: 4px 0 0; font-size: 0.9rem; color: #a4c2d1; }
 
-    /* General Section */
-    section { padding: 80px 0; }
-    .intro { max-width: 700px; margin-bottom: 35px; }
-    .kicker { font-weight: 800; font-size: 0.85rem; color: var(--blue); }
-    h2 { font-size: clamp(1.8rem, 3vw, 2.3rem); line-height: 1.3; color: #0b3148; margin: 8px 0; font-weight: 800; }
-    p { color: var(--muted); }
+    /* General Section Styles */
+    section { padding: 90px 0; }
+    .intro { max-width: 700px; margin-bottom: 45px; }
+    .kicker { font-weight: 800; font-size: 0.88rem; color: var(--blue); text-transform: uppercase; letter-spacing: 0.5px; }
+    h2 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); line-height: 1.3; color: #0b3148; margin: 8px 0; font-weight: 800; }
+    p { color: var(--muted); font-size: 1rem; }
 
     /* About Section */
-    .about-box { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: #fff; border: 1px solid #e2ecef; border-radius: 20px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
-    .about-badge { background: #eaf4f8; padding: 8px 16px; border-radius: 8px; color: var(--blue); font-weight: 700; font-size: 0.9rem; display: inline-block; margin-bottom: 15px; }
-    .license-card { background: #fdfaf3; border: 1px solid #f3e5c8; border-radius: 14px; padding: 20px; margin-top: 15px; }
-    .license-card h4 { margin: 0 0 5px; color: #0b3148; font-size: 1rem; }
+    .about-box { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: center; background: #fff; border: 1px solid #e2ecef; border-radius: 24px; padding: 45px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+    .about-badge { background: #eaf4f8; padding: 8px 18px; border-radius: 30px; color: var(--blue); font-weight: 700; font-size: 0.9rem; display: inline-block; margin-bottom: 15px; }
+    .license-card { background: #fdfaf3; border: 1px solid #f3e5c8; border-radius: 16px; padding: 22px; margin-top: 20px; }
+    .license-card h4 { margin: 0 0 6px; color: #0b3148; font-size: 1.05rem; }
 
-    /* Services Grid */
+    /* Services Grid with Cards */
     .services { background: var(--cream); }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .card { background: #fff; border: 1px solid #e8e3d9; border-radius: 16px; padding: 28px; transition: transform 0.2s, box-shadow 0.2s; }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-    .icon { font-size: 1.8rem; background: #eaf4f8; border-radius: 12px; width: 56px; height: 56px; display: grid; place-items: center; margin-bottom: 16px; }
-    .card h3 { margin: 0 0 8px; color: #0c334b; font-size: 1.2rem; }
-    .card p { font-size: 0.93rem; margin: 0; line-height: 1.6; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card { background: #fff; border: 1px solid #e8e3d9; border-radius: 20px; padding: 32px; transition: all 0.3s ease; position: relative; overflow: hidden; }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(8, 46, 70, 0.08); border-color: #d2c8b8; }
+    .icon { font-size: 2rem; background: linear-gradient(135deg, #eaf4f8 0%, #dbebf3 100%); border-radius: 16px; width: 62px; height: 62px; display: grid; place-items: center; margin-bottom: 20px; color: var(--blue); }
+    .card h3 { margin: 0 0 10px; color: #0c334b; font-size: 1.25rem; font-weight: 700; }
+    .card p { font-size: 0.95rem; margin: 0; line-height: 1.65; }
+
+    /* Popular Destinations */
+    .destinations-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .dest-card { position: relative; border-radius: 18px; overflow: hidden; height: 260px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+    .dest-card:hover { transform: scale(1.03); }
+    .dest-card img { width: 100%; height: 100%; object-fit: cover; }
+    .dest-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(5,28,43,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; color: #fff; }
+    .dest-overlay h3 { margin: 0; font-size: 1.2rem; font-weight: 800; }
+    .dest-overlay span { font-size: 0.85rem; color: #f1c570; }
+
+    /* Testimonials Section */
+    .testimonials { background: #fff; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .review-card { background: var(--cream); padding: 28px; border-radius: 18px; border: 1px solid #e2ecef; }
+    .stars { color: var(--gold); margin-bottom: 12px; font-size: 1.1rem; }
+    .review-card p { font-size: 0.95rem; font-style: italic; color: #2c4a5e; }
+    .user-info { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+    .avatar { width: 42px; height: 42px; background: var(--blue); color: #fff; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 0.95rem; }
+
+    /* FAQ Section Accordion */
+    .faq-section { background: var(--cream); }
+    .faq-item { background: #fff; border: 1px solid #e2ecef; border-radius: 14px; margin-bottom: 12px; overflow: hidden; }
+    .faq-question { padding: 18px 22px; font-weight: 700; color: #0b3148; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-answer { padding: 0 22px 18px; color: var(--muted); font-size: 0.95rem; display: none; }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-question { color: var(--blue); }
 
     /* Contact & Form */
-    .contact { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 30px; }
-    .panel { border-radius: 18px; padding: 30px; background: #eaf4f8; border: 1px solid #d4e5ee; }
-    .panel h3 { margin-top: 0; font-size: 1.3rem; color: #0b3148; }
+    .contact { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 35px; }
+    .panel { border-radius: 20px; padding: 35px; background: #eaf4f8; border: 1px solid #d4e5ee; }
+    .panel h3 { margin-top: 0; font-size: 1.35rem; color: #0b3148; }
     .panel a { color: #126391; font-weight: 700; }
-    .form { background: #fff; border: 1px solid #d6e4eb; border-radius: 18px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
-    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-    .field { display: grid; gap: 6px; margin-bottom: 15px; }
+    .form { background: #fff; border: 1px solid #d6e4eb; border-radius: 20px; padding: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .field { display: grid; gap: 6px; margin-bottom: 16px; }
     .field label { font-size: 0.88rem; font-weight: 700; color: #0c334b; }
-    .field input, .field select, .field textarea { font: inherit; border: 1px solid #c6d8e1; border-radius: 9px; padding: 12px; outline: none; transition: border 0.2s; }
-    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blue); }
-    .field textarea { min-height: 100px; resize: vertical; }
+    .field input, .field select, .field textarea { font: inherit; border: 1px solid #c6d8e1; border-radius: 10px; padding: 12px 14px; outline: none; transition: border 0.2s; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(17,105,156,0.1); }
+    .field textarea { min-height: 110px; resize: vertical; }
 
     /* CTA & Footer */
-    .cta { background: linear-gradient(110deg, #082b42, #126a9b); color: #fff; text-align: center; }
+    .cta { background: linear-gradient(135deg, #082b42 0%, #126a9b 100%); color: #fff; text-align: center; padding: 80px 0; }
     .cta h2 { color: #fff; }
-    .cta p { color: #d0e4ed; max-width: 500px; margin: 10px auto 25px; }
-    footer { background: #061d2c; color: #b5cbd7; padding: 40px 0 20px; font-size: 0.9rem; }
+    .cta p { color: #d0e4ed; max-width: 550px; margin: 12px auto 30px; font-size: 1.1rem; }
+    footer { background: #041622; color: #b5cbd7; padding: 45px 0 25px; font-size: 0.9rem; }
     .footer { display: flex; justify-content: space-between; gap: 30px; align-items: center; }
-    .footer img { width: 110px; height: 60px; object-fit: contain; background: #fff; border-radius: 8px; padding: 4px; }
+    .footer img { width: 110px; height: 60px; object-fit: contain; background: #fff; border-radius: 10px; padding: 5px; }
 
-    /* Floating WhatsApp Button */
-    .whatsapp-float { position: fixed; bottom: 25px; left: 25px; background: var(--whatsapp); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; font-size: 2rem; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 999; transition: transform 0.2s; }
-    .whatsapp-float:hover { transform: scale(1.08); }
+    /* Animated Floating WhatsApp Button */
+    .whatsapp-float { 
+      position: fixed; bottom: 30px; left: 30px; background: var(--whatsapp); color: #fff; 
+      width: 62px; height: 62px; border-radius: 50%; display: grid; place-items: center; 
+      font-size: 2.2rem; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); z-index: 999; 
+      transition: transform 0.3s; animation: pulse 2s infinite;
+    }
+    .whatsapp-float:hover { transform: scale(1.12); }
 
+    /* Keyframe Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    @media (max-width: 900px) {
+      .grid, .destinations-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-box { grid-template-columns: 1fr; }
+    }
     @media (max-width: 768px) {
       .links { display: none; }
-      .grid, .contact, .row, .about-box, .stats-grid { grid-template-columns: 1fr; }
+      .grid, .contact, .row, .stats-grid, .destinations-grid, .reviews-grid { grid-template-columns: 1fr; }
       .top .container { justify-content: center; text-align: center; }
       .top span { display: none; }
-      section { padding: 55px 0; }
+      section { padding: 60px 0; }
       .footer { flex-direction: column; text-align: center; }
-      .whatsapp-float { bottom: 15px; left: 15px; width: 52px; height: 52px; font-size: 1.7rem; }
+      .whatsapp-float { bottom: 18px; left: 18px; width: 54px; height: 54px; font-size: 1.8rem; }
     }
   </style>
 </head>
@@ -141,6 +199,8 @@
         <div class="links">
           <a href="#about">درباره ما</a>
           <a href="#services">خدمات</a>
+          <a href="#destinations">مقاصد محبوب</a>
+          <a href="#faq">سوالات متداول</a>
           <a href="#contact">ارتباط با ما</a>
           <a href="en.html" lang="en" style="font-weight:700; color:var(--blue);">English</a>
         </div>
@@ -152,12 +212,12 @@
   <main>
     <!-- Hero Section -->
     <section class="hero" id="home">
-      <div class="container">
-        <div class="eyebrow">سفر · تجارت · تحصیل · زیارت</div>
-        <h1>همراه معتمد شما برای هر مقصد و مسیر.</h1>
+      <div class="container hero-content">
+        <div class="eyebrow">✈ سفر · تجارت · تحصیل · زیارت</div>
+        <h1>همراه معتمد و مطمئن شما برای هر مقصد و مسیر.</h1>
         <p>شرکت خدمات سیاحتی فجر پارسا با ۵ سال سابقه درخشان و جواز رسمی، مطمئن‌ترین مسیر را برای سفرهای کاری، تحصیلی، تفریحی و زیارتی شما فراهم می‌سازد.</p>
         <div class="actions">
-          <a class="btn gold" href="https://wa.me/93777377774?text=سلام%20می‌خواهم%20مشاوره%20رایگان%20دریافت%20کنم.">ارسال پیام در واتساپ</a>
+          <a class="btn gold" href="https://wa.me/93777377774?text=سلام%20می‌خواهم%20مشاوره%20رایگان%20دریافت%20کنم.">پیام آنی در واتساپ</a>
           <a class="btn outline" href="#services">مشاهده خدمات ما</a>
         </div>
       </div>
@@ -168,7 +228,7 @@
       <div class="container stats-grid">
         <div class="stat-item">
           <h3>۵+ سال</h3>
-          <p>سابقه و تجربه کاری درخشـان</p>
+          <p>سابقه و تجربه کاری درخشان</p>
         </div>
         <div class="stat-item">
           <h3>جواز رسمی ۳ ساله</h3>
@@ -181,21 +241,21 @@
       </div>
     </div>
 
-    <!-- About Us -->
+    <!-- About Section -->
     <section id="about">
       <div class="container">
         <div class="about-box">
           <div>
             <span class="about-badge">درباره فجر پارسا</span>
-            <h2>تعهد، سرعت و شفافیت در ارائه خدمات</h2>
-            <p>شرکت خدمات سیاحتی فجر پارسا طی ۵ سال فعالیت مستمر در شهر کابل، همواره کوشیده است تا بهترین و سریع‌ترین خدمات مسافرتی را به هموطنان عزیز ارائه دهد. ما با درک حساسیت‌های زمان‌بندی و اسناد، مراحل کاری شما را با دقت بالایی مدیریت می‌کنیم.</p>
+            <h2>تعهد، سرعت و شفافیت در ارائه خدمات سیاحتی</h2>
+            <p>شرکت خدمات سیاحتی فجر پارسا طی ۵ سال فعالیت مستمر در کابل، همواره کوشیده است تا بهترین و سریع‌ترین خدمات مسافرتی را به هموطنان عزیز ارائه دهد. ما با درک حساسیت‌های زمان‌بندی و اسناد، مراحل کاری شما را با دقت بالایی مدیریت می‌کنیم.</p>
             <div class="license-card">
-              <h4>✓ دارای جواز رسمی ۳ ساله فعالیت</h4>
-              <p style="margin:0; font-size:0.88rem;">فعالیت کاملاً قانونی، تحت نظارت ارگان‌های مربوطه جهت اطمینان خاطر شما از تمام مراحل اداری و مالی.</p>
+              <h4>✓ دارای جواز رسمی ۳ ساله فعالیت قانونی</h4>
+              <p style="margin:0; font-size:0.9rem;">فعالیت کاملاً رسمی جهت اطمینان خاطر کامل شما از تمام مراحل اداری، اسناد و امور مالی.</p>
             </div>
           </div>
           <div>
-            <img src="logo.png" alt="درباره فجر پارسا" style="width:100%; max-width:380px; display:block; margin:auto; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.08));">
+            <img src="logo.png" alt="درباره فجر پارسا" style="width:100%; max-width:360px; display:block; margin:auto; filter: drop-shadow(0 12px 20px rgba(0,0,0,0.1));">
           </div>
         </div>
       </div>
@@ -205,25 +265,25 @@
     <section class="services" id="services">
       <div class="container">
         <div class="intro">
-          <div class="kicker">خدمات ما</div>
+          <div class="kicker">خدمات تخصصی ما</div>
           <h2>انتخاب درست برای گام بعدی شما</h2>
           <p>از نخستین سوال و مشاوره تا صدور اسناد و تنظیم سفر، همراه شما هستیم.</p>
         </div>
         <div class="grid">
           <article class="card">
             <div class="icon">✈</div>
-            <h3>خدمات جامع سفر</h3>
-            <p>برنامه‌ریزی دقیق، تنظیم برنامه سیر و سفر و مشاوره کامل جهت اخذ ویزا و آماده‌سازی اسناد.</p>
+            <h3>خدمات جامع سفر و ویزا</h3>
+            <p>برنامه‌ریزی دقیق، تنظیم تور و مشاوره کامل جهت اخذ ویزا و آماده‌سازی اسناد مسافرتی.</p>
           </article>
           <article class="card">
             <div class="icon">🎫</div>
             <h3>تکت‌پیما و رزرو پرواز</h3>
-            <p>صدور و رزرو آنلاین تکت‌های پرواز داخلی و بین‌المللی با مناسب‌ترین قیمت‌ها و پروازها.</p>
+            <p>صدور و رزرو سریع تکت‌های پرواز داخلی و بین‌المللی با مناسب‌ترین نرخ‌های روز.</p>
           </article>
           <article class="card">
             <div class="icon">✉</div>
             <h3>دعوت‌نامه‌های تجارتی</h3>
-            <p>اخذ و پیگیری رسمی دعوت‌نامه‌های کاری و تجارتی جهت رونق کسب‌وکارهای فراملی.</p>
+            <p>اخذ و پیگیری رسمی دعوت‌نامه‌های کاری و تجارتی جهت سفر و رونق کسب‌وکارتان.</p>
           </article>
           <article class="card">
             <div class="icon">🎓</div>
@@ -233,13 +293,114 @@
           <article class="card">
             <div class="icon">☪</div>
             <h3>حج و عمره</h3>
-            <p>ترتیبات کامل، اخذ ویزا و ثبت‌نام در پروسه‌های حج متبرکه و عمره مفرحه با شرایط ویژه.</p>
+            <p>ترتیبات کامل، اخذ ویزا و ثبت‌نام در پروسه‌های حج متبرکه و عمره با شرایط عالی.</p>
           </article>
           <article class="card">
             <div class="icon">🕌</div>
             <h3>کاروان‌های زیارتی</h3>
-            <p>تنظیم و اعزام گروه‌های زیارتی به عتبات عالیات (کربلا، نجف) و سایر اماکن مقدسه.</p>
+            <p>تنظیم و اعزام منظم گروه‌های زیارتی به عتبات عالیات (کربلا، نجف) و سایر اماکن مقدسه.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section id="destinations">
+      <div class="container">
+        <div class="intro">
+          <div class="kicker">مسیرهای پرطرفدار</div>
+          <h2>مقاصد محبوب مسافران ما</h2>
+          <p>برخی از محبوب‌ترین مقاصد مسافرتی، کاری و زیارتی که خدمات آن را ارائه می‌دهیم.</p>
+        </div>
+        <div class="destinations-grid">
+          <div class="dest-card">
+            <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80" alt="ترکیه">
+            <div class="dest-overlay">
+              <h3>ترکیه (استانبول)</h3>
+              <span>سیاحتی، تجارتی و تحصیلی</span>
+            </div>
+          </div>
+          <div class="dest-card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="امارات">
+            <div class="dest-overlay">
+              <h3>امارات (دبی)</h3>
+              <span>تکت‌پیما و تجارتی</span>
+            </div>
+          </div>
+          <div class="dest-card">
+            <img src="https://images.unsplash.com/photo-1565552070098-0073a128b49a?auto=format&fit=crop&w=600&q=80" alt="عربستان">
+            <div class="dest-overlay">
+              <h3>عربستان (مکه و مدینه)</h3>
+              <span>حج و عمره متبرکه</span>
+            </div>
+          </div>
+          <div class="dest-card">
+            <img src="https://images.unsplash.com/photo-1609838029966-2821217e4e08?auto=format&fit=crop&w=600&q=80" alt="عراق">
+            <div class="dest-overlay">
+              <h3>عراق (کربلای معلی)</h3>
+              <span>کاروان‌های زیارتی</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="intro">
+          <div class="kicker">اعتماد شما افتخار ماست</div>
+          <h2>نظرات برخی از مشتریان ما</h2>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«تشکر از آژانس فجر پارسا. برای پروسه ویزا و تکت سفور بسیار همکاری دقیق و سریع داشتند. رفتار کارمندان عالی بود.»</p>
+            <div class="user-info">
+              <div class="avatar">م</div>
+              <div><strong>محمد حسینی</strong><br><small style="color:var(--muted);">مسافر استانبول</small></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«کاروان زیارتی کربلا بسیار منظم و بدون دغدغه برگزار شد. از مدیریت محترم فجر پارسا سپاسگزاریم.»</p>
+            <div class="user-info">
+              <div class="avatar">ع</div>
+              <div><strong>علی احمدی</strong><br><small style="color:var(--muted);">زائر عتبات عالیات</small></div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«برای دعوت‌نامه تجارتی مراجعه کردم. رهنمایی شفاف و پاسخگویی مداوم در واتساپ داشتند. پیشنهاد می‌کنم.»</p>
+            <div class="user-info">
+              <div class="avatar">ک</div>
+              <div><strong>کریمی</strong><br><small style="color:var(--muted);">مشتری بخش تجارت</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="intro">
+          <div class="kicker">سوالات متداول</div>
+          <h2>پاسخ به سوالات شما</h2>
+        </div>
+        <div style="max-width:800px;">
+          <div class="faq-item">
+            <div class="faq-question">آیا مشاوره اولیه در فجر پارسا رایگان است؟ <span>+</span></div>
+            <div class="faq-answer">بله، تمامی مشاوره‌های اولیه در زمینه ویزا، بلیط، اسناد تحصیلی و زیارتی کاملاً رایگان ارائه می‌شود.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">چگونه می‌توانم تکت پرواز رزرو کنم؟ <span>+</span></div>
+            <div class="faq-answer">شما می‌توانید از طریق فرم سایت یا مستقیم در واتساپ تاریخ و مقصد خود را بفرستید تا بهترین نرخ‌ها برای شما ارسال شود.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">آیا شرکت فجر پارسا دارای جواز رسمی است؟ <span>+</span></div>
+            <div class="faq-answer">بله، شرکت ما دارای جواز رسمی ۳ ساله فعالیت سیاحتی با ۵ سال سابقه کاری درخشان در کابل می‌باشد.</div>
+          </div>
         </div>
       </div>
     </section>
@@ -250,7 +411,7 @@
         <div class="intro">
           <div class="kicker">ارتباط با ما</div>
           <h2>با ما در تماس باشید</h2>
-          <p>فرم زیر را خانه پر کنید تا درخواست شما مستقیماً در واتساپ آماده ارسال شود. مشاوره اولیه کاملاً رایگان است.</p>
+          <p>فرم زیر را خانه پر کنید تا درخواست شما مستقیماً در واتساپ آماده ارسال شود.</p>
         </div>
         <div class="contact">
           <aside class="panel">
@@ -298,7 +459,7 @@
               <label for="message">شرح درخواست شما</label>
               <textarea id="message" name="message" placeholder="سوال یا جزئیات درخواست خود را بنویسید..."></textarea>
             </div>
-            <button class="btn gold" type="submit" style="width:100%; font-size:1rem; padding:13px;">ارسال مستقیم درخواست در واتساپ</button>
+            <button class="btn gold" type="submit" style="width:100%; font-size:1rem; padding:14px;">ارسال مستقیم درخواست در واتساپ</button>
           </form>
         </div>
       </div>
@@ -328,16 +489,25 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Action -->
+  <!-- Floating Animated WhatsApp -->
   <a href="https://wa.me/93777377774" class="whatsapp-float" target="_blank" rel="noopener" title="تماس مستقیم در واتساپ">💬</a>
 
-  <!-- Script Form Handler -->
+  <!-- Scripts -->
   <script>
+    // Form Handler
     document.getElementById('form').addEventListener('submit', function(e) {
       e.preventDefault();
       const f = new FormData(e.currentTarget);
       const m = `سلام، درخواست مشاوره جدید دارم:\n\n👤 نام: ${f.get('name')}\n📞 تماس: ${f.get('phone')}\n📋 خدمت: ${f.get('service')}\n📍 مقصد: ${f.get('destination')}\n💬 پیام: ${f.get('message')}`;
       window.open('https://wa.me/93777377774?text=' + encodeURIComponent(m), '_blank', 'noopener');
+    });
+
+    // FAQ Accordion Handler
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+      });
     });
   </script>
 </body>
