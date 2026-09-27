@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>فجر پارسا — پلتفرم خدمات سفر، ویزا و تجارت</title>
+<meta name="description" content="پیش‌نمایش رسمی پلتفرم جامع خدمات سفر، ویزا، زیارت، تجارت، رزرو و پیگیری فجر پارسا">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#08111f;--navy2:#102039;--gold:#b68a36;--gold2:#e7c979;--ivory:#f7f4ed;--cream:#fffdf8;--ink:#142033;--muted:#687487;--line:rgba(15,23,42,.10);--green:#0c756d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif}a{text-decoration:none;color:inherit}button,input,select{font:inherit}.shell{width:min(calc(100% - 34px),1280px);margin:auto}.latin{font-family:Manrope,Arial,sans-serif}.top{background:var(--navy);color:#dbe2ea;font-size:11px}.top .shell{min-height:36px;display:flex;align-items:center;justify-content:space-between;gap:18px}.top-right{display:flex;gap:18px;align-items:center}.header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(15,23,42,.06)}.header .shell{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px}.brand img{width:49px;height:49px;border-radius:15px;background:#fff;padding:4px;object-fit:contain;border:1px solid #edf0f3;box-shadow:0 6px 22px rgba(10,18,32,.08)}.brand strong{display:block;font-size:18px}.brand small{display:block;margin-top:1px;font:800 8.5px Manrope;color:#9099a8;letter-spacing:.15em}.nav{display:flex;align-items:center;gap:4px;font-size:13px;font-weight:800}.nav a,.nav button{border:0;background:transparent;padding:10px 13px;border-radius:12px;cursor:pointer;color:#172234}.nav a:hover,.nav button:hover{background:#f1efe9}.actions{display:flex;align-items:center;gap:8px}.btn{border:0;border-radius:14px;padding:11px 16px;font-weight:900;font-size:12px;cursor:pointer}.btn-primary{background:var(--navy);color:#fff;box-shadow:0 10px 28px rgba(8,17,31,.14)}.btn-outline{background:#fff;border:1px solid #dfe4e8;color:#1d2939}.mega{display:none;position:absolute;inset-inline:0;top:100%;background:rgba(255,253,248,.99);border-top:1px solid #eceff2;box-shadow:0 30px 70px rgba(10,18,32,.12)}.mega.show{display:block}.mega-grid{display:grid;grid-template-columns:1.1fr 3fr;gap:20px;padding:24px 0 28px}.mega-intro{background:var(--navy);color:white;border-radius:25px;padding:24px}.eyebrow{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:6px 10px;font:800 10px Manrope;border:1px solid rgba(182,138,54,.24);background:rgba(182,138,54,.08);color:#79591e;letter-spacing:.06em}.mega-intro .eyebrow{color:#f3d790;border-color:rgba(255,255,255,.11);background:rgba(255,255,255,.05)}.mega-intro h3{font-size:22px;line-height:1.55;margin:14px 0 8px}.mega-intro p{font-size:11px;line-height:2;color:#b8c2ce}.mega-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.mega-item{border:1px solid #e5e8ec;background:#fff;border-radius:18px;padding:15px}.mega-item strong{font-size:13px;display:block}.mega-item span{font-size:10px;line-height:1.8;color:#748092;display:block;margin-top:4px}
+.hero{min-height:720px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(4,11,21,.97),rgba(6,15,28,.83) 44%,rgba(6,15,28,.34) 77%),url('arab.jpg') center 40%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 73% 30%,rgba(231,201,121,.22),transparent 25rem)}.hero .shell{min-height:720px;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;position:relative;z-index:2}.hero h1{font-size:63px;line-height:1.18;letter-spacing:-.035em;margin:20px 0 12px}.hero h1 span{display:block;color:#f1d58d}.hero-copy{color:#d4dce6;font-size:15px;line-height:2;max-width:720px}.hero-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:26px}.hero .btn-outline{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.16);color:#fff}.hero-note{font-size:11px;color:#bfc8d4}.finder{background:rgba(255,253,248,.84);color:var(--ink);backdrop-filter:blur(22px);border:1px solid rgba(255,255,255,.72);border-radius:32px;padding:27px;box-shadow:0 30px 90px rgba(4,10,19,.20)}.finder-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.finder h2{font-size:22px;margin:12px 0 4px}.finder p{font-size:11px;line-height:1.9;color:#697587;margin:0}.finder-grid{display:grid;gap:11px;margin-top:20px}.field label{display:block;font-size:11px;font-weight:900;color:#566273;margin-bottom:6px}.field select{width:100%;border:1px solid #dfe4e8;background:#fff;border-radius:16px;padding:13px 14px;color:#1c2736;outline:none}.field select:focus{border-color:#c69a43}.finder-cta{width:100%;margin-top:4px;padding:14px;border:0;border-radius:16px;background:var(--navy);color:#fff;font-weight:900}.finder-foot{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:16px;padding-top:15px;border-top:1px solid #e6e8eb}.finder-foot div{background:rgba(255,255,255,.72);border-radius:14px;padding:10px;text-align:center;font-size:10px;font-weight:800;color:#5e6979}
+.trust{position:relative;z-index:3;margin-top:-38px}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid white;border-radius:28px;overflow:hidden;box-shadow:0 22px 70px rgba(10,18,32,.11)}.trust-item{padding:22px;border-left:1px solid #eef1f4}.trust-item strong{font-size:13px;display:block}.trust-item span{font-size:10px;color:#7b8797;display:block;margin-top:5px;line-height:1.8}
+.section{padding:82px 0}.section-title{font-size:38px;letter-spacing:-.03em;margin:14px 0 8px}.lead{font-size:14px;line-height:1.95;color:var(--muted);max-width:760px}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}.service{background:#fff;border:1px solid var(--line);border-radius:24px;padding:21px;min-height:205px;transition:.22s ease}.service:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(15,23,42,.08);border-color:rgba(182,138,54,.32)}.service .ico{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#f2e7cc,#fff);color:#7b5b20;font-weight:900}.service small{display:block;margin-top:19px;color:#a0813b;font:800 8.5px Manrope;letter-spacing:.12em}.service h3{font-size:17px;margin:5px 0 7px}.service p{font-size:11px;color:#707c8d;line-height:1.9;margin:0}.service a{display:inline-block;margin-top:14px;color:#76581f;font-size:11px;font-weight:900}
+.destinations{background:var(--navy);color:#fff}.destinations .eyebrow{border-color:rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#efd38e}.destinations .lead{color:#aeb7c3}.dest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}.dest{height:310px;border-radius:27px;position:relative;overflow:hidden;background:#111827}.dest img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.6s ease}.dest:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,18,.05),rgba(5,10,18,.86))}.dest:hover img{transform:scale(1.05)}.dest-content{position:absolute;z-index:2;inset-inline:22px;bottom:20px}.dest-content small{font:800 8.5px Manrope;color:#f0d58f;letter-spacing:.13em}.dest-content h3{font-size:20px;margin:5px 0}.dest-content p{font-size:11px;color:#d7dde4;margin:0;line-height:1.8}
+.commerce-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:30px;padding:31px}.panel h2{font-size:29px;letter-spacing:-.025em;margin:13px 0 8px}.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.step{border:1px solid #e7eaed;background:#fbfbfa;border-radius:17px;padding:14px}.step b{font-size:12px}.step p{margin:4px 0 0;font-size:10px;line-height:1.8;color:#7a8594}.offer{background:linear-gradient(135deg,#d5b66d,#f3e7c9);border:0}.offer p{color:#5f5a4f}.offer-list{display:grid;gap:8px;margin-top:20px}.offer-list div{background:rgba(255,255,255,.58);border-radius:15px;padding:12px 14px;font-size:12px;font-weight:800}
+.portal{background:#fff}.portal-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.dark{background:var(--navy);color:#fff;border:0}.dark .lead{color:#bac3ce}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.feature-list div{border-radius:16px;padding:13px;background:rgba(255,255,255,.06);font-size:11px}.support{background:#fff}.support .feature-list div{background:#f8f7f3;border:1px solid #ebedef}.corporate{background:linear-gradient(135deg,#0b1728,#142743);color:#fff;border-radius:34px;padding:40px}.corp-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.corporate .lead{color:#c8d0da}.corp-actions{display:grid;gap:9px}.corp-actions div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:13px 15px;font-size:11px}
+.footer{background:#060c15;color:#a9b2bf;padding:55px 0 92px}.foot-grid{display:grid;grid-template-columns:1.1fr repeat(3,1fr);gap:32px}.footer h4{color:#fff;margin:0 0 13px;font-size:13px}.footer p,.footer a{font-size:11px;line-height:2;color:#9eabb9}.foot-brand img{width:43px;height:43px;border-radius:12px;background:#fff;padding:4px;object-fit:contain}.legal{margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.09);font-size:9px;color:#738093}.consult{position:fixed;left:18px;bottom:18px;z-index:35;background:var(--navy);color:#fff;border-radius:16px;padding:12px 15px;box-shadow:0 18px 50px rgba(8,17,31,.34);font-size:11px;font-weight:900;border:1px solid rgba(255,255,255,.08)}.mobilebar{display:none}
+@media(max-width:1050px){.nav{display:none}.hero .shell{grid-template-columns:1fr}.hero{padding:48px 0 80px}.hero .shell{min-height:auto}.hero h1{font-size:49px}.service-grid{grid-template-columns:repeat(2,1fr)}.dest-grid{grid-template-columns:repeat(2,1fr)}.mega{display:none!important}}
+@media(max-width:720px){.shell{width:min(calc(100% - 22px),1280px)}.top-right{display:none}.actions .btn-outline{display:none}.hero h1{font-size:39px}.hero .shell{gap:28px}.finder{padding:20px}.trust-grid{grid-template-columns:1fr 1fr}.trust-item{padding:15px}.service-grid,.dest-grid,.steps,.commerce-grid,.portal-grid,.corp-grid,.foot-grid{grid-template-columns:1fr}.section{padding:62px 0}.section-title{font-size:30px}.dest{height:245px}.actions .btn-primary{display:none}.consult{bottom:78px}.mobilebar{display:flex;position:fixed;left:10px;right:10px;bottom:9px;z-index:34;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border:1px solid #e5e8eb;border-radius:17px;padding:7px;gap:7px;box-shadow:0 20px 60px rgba(10,18,32,.18)}.mobilebar button{flex:1;padding:11px;border-radius:12px;border:0;font-size:11px;font-weight:900}.mobilebar .main{background:var(--navy);color:#fff}.mobilebar .alt{background:#fff;border:1px solid #e2e6ea}}
+</style>
+</head>
+<body>
+<div class="top"><div class="shell"><span>خدمات سفر، ویزا، زیارت و تجارت — درخواست و پیگیری یکپارچه</span><div class="top-right"><span>واتساپ</span><span>تماس با دفتر</span><span>دری / English</span></div></div></div>
+
+<header class="header">
+<div class="shell">
+<a class="brand" href="#"><img src="logo.png" alt="فجر پارسا"><div><strong>فجر پارسا</strong><small>TRAVEL • VISA • PILGRIMAGE • BUSINESS</small></div></a>
+<nav class="nav">
+<button id="servicesBtn">خدمات ▾</button>
+<a href="#destinations">کشورها</a><a href="#business">سفر تجاری</a><a href="#pilgrimage">زیارت</a><a href="#offers">پیشنهادها</a><a href="#track">پیگیری</a>
+</nav>
+<div class="actions"><button class="btn btn-outline">ورود / حساب من</button><button class="btn btn-primary">ثبت درخواست</button></div>
+</div>
+<div id="mega" class="mega">
+<div class="shell mega-grid">
+<div class="mega-intro"><span class="eyebrow">SERVICE CATALOG</span><h3>همه خدمات فجر پارسا در یک ساختار رسمی و قابل توسعه</h3><p>هر خدمت بعداً می‌تواند قیمت، شرایط، مدارک، مدت پروسس، فرم اختصاصی، گزینه فوریت و خدمات مکمل خود را داشته باشد.</p></div>
+<div class="mega-links">
+<div class="mega-item"><strong>ویزا و اقامت</strong><span>توریستی، تجاری، تحصیلی، کاری، زیارتی، تمدید و تغییر وضعیت</span></div>
+<div class="mega-item"><strong>دعوتنامه و تجارت</strong><span>دعوتنامه تجاری، نمایشگاه، سفر کاری و خدمات شرکتی</span></div>
+<div class="mega-item"><strong>پرواز و هتل</strong><span>تکت، هتل، رزرو و بسته سفر</span></div>
+<div class="mega-item"><strong>زیارت و کاروان</strong><span>عمره، کربلا، ایران و خدمات گروهی</span></div>
+<div class="mega-item"><strong>اسناد و کنسولی</strong><span>فرم، وقت، ترجمه، تصدیق و آماده‌سازی اسناد</span></div>
+<div class="mega-item"><strong>بیمه و خدمات مکمل</strong><span>بیمه، ترانسفر، بررسی مدارک و پشتیبانی سفر</span></div>
+</div></div></div>
+</header>
+
+<section class="hero">
+<div class="shell">
+<div>
+<span class="eyebrow" style="color:#ffe4a4;border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.08)">FAJR PARSA TRAVEL PLATFORM</span>
+<h1>سفر و ویزای شما،<span>در یک پلتفرم رسمی و قابل پیگیری</span></h1>
+<p class="hero-copy">برای سفرهای سیاحتی، زیارتی، تجاری و اقامتی؛ خدمات، مدارک، درخواست، مشاوره، پیگیری و ارتباط با فجر پارسا در یک تجربه یکپارچه.</p>
+<div class="hero-actions"><button class="btn btn-primary" style="background:#fff;color:#08111f">پیدا کردن خدمت</button><button class="btn btn-outline">پیگیری پرونده</button><span class="hero-note">معلومات و قیمت فقط پس از تأیید فجر پارسا نمایش داده می‌شود.</span></div>
+</div>
+<div class="finder">
+<div class="finder-head"><div><span class="eyebrow">SERVICE FINDER</span><h2>از کجا شروع می‌کنید؟</h2><p>تابعیت، مقصد و هدف سفر را انتخاب کنید تا خدمات مرتبط نمایش داده شود.</p></div></div>
+<div class="finder-grid">
+<div class="field"><label>پاسپورت / تابعیت</label><select><option>افغانستان</option><option>کشور دیگر</option></select></div>
+<div class="field"><label>کشور مقصد</label><select><option>انتخاب مقصد</option><option>امارات متحده عربی</option><option>ایران</option><option>ترکیه</option><option>چین</option><option>عربستان سعودی</option><option>عراق</option><option>پاکستان</option><option>ازبکستان</option><option>قزاقستان</option></select></div>
+<div class="field"><label>هدف سفر</label><select><option>انتخاب هدف</option><option>سیاحت</option><option>تجارت / نمایشگاه</option><option>اقامت</option><option>زیارت</option><option>تحصیل</option><option>کار</option><option>دعوتنامه / اسناد</option></select></div>
+<button class="finder-cta">مشاهده گزینه‌های مناسب ←</button>
+</div>
+<div class="finder-foot"><div>کشورمحور</div><div>فرم هوشمند</div><div>پشتیبانی انسانی</div></div>
+</div>
+</div>
+</section>
+
+<div class="trust"><div class="shell trust-grid">
+<div class="trust-item"><strong>درخواست آنلاین</strong><span>فرم مناسب هر نوع خدمت</span></div>
+<div class="trust-item"><strong>پیگیری پرونده</strong><span>شماره درخواست و مراحل کار</span></div>
+<div class="trust-item"><strong>واتساپ و دفتر</strong><span>ادامه ارتباط با تیم فجر پارسا</span></div>
+<div class="trust-item"><strong>اسناد و رسیدها</strong><span>پرونده منظم برای مشتری</span></div>
+</div></div>
+
+<section class="section" id="services"><div class="shell">
+<span class="eyebrow">COMPLETE SERVICE CATALOG</span><h2 class="section-title">پلتفرم جامع، نه یک صفحه معرفی</h2>
+<p class="lead">هسته سایت بر اساس کاتالوگ خدمات ساخته می‌شود؛ هر کشور و هر خدمت می‌تواند چند نوع، چند مدت، شرایط، مدارک، نرخ، گزینه فوری و فرم اختصاصی خود را داشته باشد.</p>
+<div class="service-grid">
+<div class="service"><div class="ico">V</div><small>VISA</small><h3>ویزاهای کشورها</h3><p>توریستی، تجاری، تحصیلی، کاری، ترانزیت، زیارتی و سایر انواع تأییدشده.</p><a href="#">مشاهده خدمات ←</a></div>
+<div class="service"><div class="ico">R</div><small>RESIDENCY</small><h3>اقامت و تمدید</h3><p>اقامت، اسپانسری، تمدید، تغییر وضعیت و گزینه‌های مرتبط.</p><a href="#">بررسی گزینه‌ها ←</a></div>
+<div class="service"><div class="ico">B</div><small>BUSINESS</small><h3>دعوتنامه تجاری</h3><p>دعوتنامه، نمایشگاه، جلسات، سفر شرکتی و خدمات تجاری.</p><a href="#">خدمات تجاری ←</a></div>
+<div class="service"><div class="ico">F</div><small>FLIGHTS</small><h3>تکت و مسیر پرواز</h3><p>درخواست نرخ، مسیر، کلاس پرواز و هماهنگی سفر.</p><a href="#">درخواست تکت ←</a></div>
+<div class="service"><div class="ico">H</div><small>HOTELS</small><h3>هتل و رزرو</h3><p>درخواست هتل بر اساس شهر، تاریخ، تعداد نفر و سطح اقامت.</p><a href="#">درخواست هتل ←</a></div>
+<div class="service"><div class="ico">Z</div><small>PILGRIMAGE</small><h3>زیارت و کاروان</h3><p>عمره، کربلا، ایران و خدمات گروهی و سازمان‌دهی کاروان.</p><a href="#">برنامه‌های زیارتی ←</a></div>
+<div class="service"><div class="ico">D</div><small>DOCUMENTS</small><h3>اسناد و کنسولی</h3><p>ترجمه، تصدیق، فرم، وقت، بررسی اسناد و آماده‌سازی پرونده.</p><a href="#">خدمات اسناد ←</a></div>
+<div class="service"><div class="ico">+</div><small>ADD-ONS</small><h3>خدمات مکمل سفر</h3><p>بیمه، ترانسفر، راهنمایی، پشتیبانی و خدمات مکمل قابل سفارش.</p><a href="#">خدمات مکمل ←</a></div>
+</div></div></section>
+
+<section class="section destinations" id="destinations"><div class="shell">
+<span class="eyebrow">DESTINATION HUBS</span><h2 class="section-title">هر کشور، یک مرکز خدمات اختصاصی</h2><p class="lead">به‌جای چند لینک ساده، هر مقصد صفحه اختصاصی خود را دارد و تمام ویزاها، اقامت، تجارت، زیارت، رزرو و معلومات مربوط به همان کشور را یکجا نشان می‌دهد.</p>
+<div class="dest-grid">
+<article class="dest"><img src="arab.jpg" alt="امارات"><div class="dest-content"><small>UAE</small><h3>امارات متحده عربی</h3><p>ویزا • اقامت • تجارت • دعوتنامه • هتل • پرواز</p></div></article>
+<article class="dest"><img src="iran.jpg" alt="ایران"><div class="dest-content"><small>IRAN</small><h3>ایران</h3><p>سیاحتی • زیارتی • تجاری • اسناد • سفر گروهی</p></div></article>
+<article class="dest"><img src="karbala.jpg" alt="عراق"><div class="dest-content"><small>IRAQ</small><h3>عراق و عتبات</h3><p>کربلا • نجف • گروه زیارتی • هتل • ترانسفر</p></div></article>
+<article class="dest"><img src="pakistan.jpg" alt="پاکستان"><div class="dest-content"><small>PAKISTAN</small><h3>پاکستان</h3><p>سفر • ویزا • کنسولی • درخواست خدمات</p></div></article>
+<article class="dest"><img src="tahsil.jpg" alt="تحصیل"><div class="dest-content"><small>STUDY</small><h3>تحصیل و سفر آموزشی</h3><p>راهنمایی، اسناد، درخواست و خدمات مرتبط</p></div></article>
+<article class="dest"><img src="tajiksatan.jpg" alt="آسیای میانه"><div class="dest-content"><small>CENTRAL ASIA</small><h3>آسیای میانه</h3><p>ازبکستان • قزاقستان • تاجیکستان • تجارت و سفر</p></div></article>
+</div></div></section>
+
+<section class="section" id="business"><div class="shell commerce-grid">
+<div class="panel">
+<span class="eyebrow">SMART REQUEST</span><h2>فرم هر مشتری بر اساس انتخاب خودش ساخته می‌شود</h2><p class="lead">کاربر فقط سؤال‌های مربوط به خدمت انتخاب‌شده را می‌بیند؛ برای ویزا، دعوتنامه، عمره، هتل، تکت یا تمدید، مسیرها متفاوت است.</p>
+<div class="steps"><div class="step"><b>۱. انتخاب کشور و خدمت</b><p>نوع خدمت، مدت، گزینه و هدف سفر</p></div><div class="step"><b>۲. اطلاعات مشتری</b><p>تماس، تابعیت و معلومات پایه</p></div><div class="step"><b>۳. جزئیات اختصاصی</b><p>سؤال‌ها و مدارک مربوط به همان سفارش</p></div><div class="step"><b>۴. ثبت و ادامه</b><p>شماره درخواست، واتساپ و حساب مشتری</p></div></div>
+</div>
+<div class="panel offer" id="offers"><span class="eyebrow">OFFERS & BUNDLES</span><h2>پیشنهادهای فروش و بسته‌های ترکیبی</h2><p class="lead">تخفیف‌ها، پیشنهادهای فصلی، گروهی و خدمات مکمل فقط وقتی نمایش داده می‌شوند که واقعاً فعال باشند.</p><div class="offer-list"><div>Visa Only</div><div>Business Travel Package</div><div>Visa + Hotel + Flight</div><div>Group / Seasonal Offer</div></div></div>
+</div></section>
+
+<section class="section portal" id="track"><div class="shell portal-grid">
+<div class="panel dark"><span class="eyebrow" style="color:#efd48d;border-color:rgba(255,255,255,.1);background:rgba(255,255,255,.05)">MY FAJR PARSA</span><h2>حساب مشتری و پیگیری پرونده</h2><p class="lead">درخواست‌ها، وضعیت پرونده، مدارک کمبود، فایل‌ها، رسیدها، قراردادها، پیام‌ها و ادامه سفارش از یک حساب رسمی.</p><div class="feature-list"><div>Case ID و Timeline</div><div>آپلود مدارک</div><div>رسید و قرارداد</div><div>ادامه درخواست</div></div><button class="btn btn-outline" style="margin-top:22px">ورود به حساب مشتری</button></div>
+<div class="panel support"><span class="eyebrow">CUSTOMER SUPPORT</span><h2>مشاور آنلاین در خدمت برند، نه در مرکز برند</h2><p class="lead">دستیار هوشمند در پشت «مشاور آنلاین» کار می‌کند؛ برای پیدا کردن خدمت، پاسخ به سؤال‌های تأییدشده و شروع درخواست. در ظاهر سایت، برند فجر پارسا مقدم است.</p><div class="feature-list"><div>راهنمای خدمت</div><div>مدارک مورد نیاز</div><div>مقایسه گزینه‌ها</div><div>انتقال به کارمند</div></div><button class="btn btn-primary" style="margin-top:22px">گفت‌وگو با مشاور</button></div>
+</div></section>
+
+<section class="section" id="pilgrimage"><div class="shell corporate">
+<div class="corp-grid"><div><span class="eyebrow" style="color:#f1d68e;border-color:rgba(255,255,255,.1);background:rgba(255,255,255,.05)">FAJR PARSA OFFICIAL</span><h2 class="section-title">یک هویت رسمی برای تمام کانال‌های مشتری</h2><p class="lead">وب‌سایت، واتساپ، کانال واتساپ، تلگرام، صفحات اجتماعی، دفتر، فرم‌ها، پیگیری و حساب مشتری باید یک زبان بصری و یک هویت واحد داشته باشند.</p></div><div class="corp-actions"><div>WhatsApp & WhatsApp Channel</div><div>Telegram & Social Pages</div><div>Contact / Office / Map</div><div>Campaign Landing Pages</div><div>Customer Forms & Tracking</div></div></div>
+</div></section>
+
+<footer class="footer"><div class="shell">
+<div class="foot-grid">
+<div class="foot-brand"><img src="logo.png" alt=""><h4 style="margin-top:14px">فجر پارسا</h4><p>پلتفرم خدمات سفر، ویزا، زیارت و تجارت؛ برای درخواست، ارتباط و پیگیری منظم مشتری.</p></div>
+<div><h4>خدمات</h4><p>ویزا و اقامت<br>دعوتنامه و تجارت<br>تکت و هتل<br>زیارت و کاروان<br>اسناد و خدمات مکمل</p></div>
+<div><h4>مشتری</h4><p>ثبت درخواست<br>پیگیری پرونده<br>حساب مشتری<br>معلومات و FAQ<br>پشتیبانی</p></div>
+<div><h4>ارتباط</h4><p>WhatsApp<br>WhatsApp Channel<br>Telegram<br>Facebook / Instagram<br>Email / Office</p></div>
+</div>
+<div class="legal">این صفحه پیش‌نمایش طراحی پلتفرم جدید فجر پارسا است. معلومات تجاری، قیمت‌ها و شرایط خدمات فقط پس از تأیید رسمی منتشر می‌شوند.</div>
+</div></footer>
+<button class="consult">مشاور آنلاین</button>
+<div class="mobilebar"><button class="main">ثبت درخواست</button><button class="alt">واتساپ</button></div>
+<script>
+const btn=document.getElementById('servicesBtn'), mega=document.getElementById('mega');
+btn?.addEventListener('click',()=>mega.classList.toggle('show'));
+document.addEventListener('click',e=>{if(mega&&btn&&!mega.contains(e.target)&&!btn.contains(e.target))mega.classList.remove('show')});
+</script>
+</body></html>
