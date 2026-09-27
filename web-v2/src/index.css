@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Vazirmatn", "Noto Sans Arabic", system-ui, sans-serif;
+  color: #172033;
+  background: #f8f6f0;
+  --fp-ink: #101827;
+  --fp-navy: #0b1220;
+  --fp-gold: #b8892f;
+  --fp-gold-soft: #e7d3a2;
+  --fp-ivory: #f8f6f0;
+  --fp-cream: #fffdf8;
+  --fp-line: rgba(16, 24, 39, .10);
+  --fp-green: #0f766e;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: var(--fp-ivory); }
+button, input, select { font: inherit; }
+
+.shell { max-width: 1240px; margin: 0 auto; padding-inline: 20px; }
+.glass {
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(255,255,255,.65);
+  box-shadow: 0 18px 70px rgba(15,23,42,.10);
+  backdrop-filter: blur(18px);
+}
+.hero {
+  background:
+    linear-gradient(90deg, rgba(8,14,26,.92) 0%, rgba(8,14,26,.68) 45%, rgba(8,14,26,.28) 100%),
+    url("https://raw.githubusercontent.com/khwajaprn/fajer-parsa/main/arab.jpg") center/cover no-repeat;
+}
+.soft-card {
+  background: rgba(255,255,255,.92);
+  border: 1px solid var(--fp-line);
+  box-shadow: 0 10px 35px rgba(15,23,42,.06);
+}
+.service-card { transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 16px 44px rgba(15,23,42,.10); border-color: rgba(184,137,47,.32); }
+.pill { border: 1px solid rgba(184,137,47,.22); background: rgba(184,137,47,.08); color: #7b5b20; }
+.floating-ai { box-shadow: 0 18px 45px rgba(11,18,32,.28); }
+
+@media (max-width: 780px) {
+  .hero { background-position: 62% center; }
+}
